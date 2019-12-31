@@ -1,0 +1,14 @@
+﻿4201,Lucy,Maguire,10,Red,Mathematics,B,Chemistry,A,Physics,C,Biology,B,English,A,Religious Studies,A,Graphic Design,B,Mandarin,B,Geography,C
+5600,Lewis,Daniels,10,Yellow,Mathematics,A,Chemistry,B,Physics,A,Biology,B,English,C,Religious Studies,C,Art,A*,Spanish,B,Geography,B
+1401,Susan,Cooper,8,Yellow,Mathematics,C,Chemistry,A,Physics,C,Biology,B,English,C,French,A,Spanish,B,Design & Technology,C,Religious Education,B,Physical Education,A,Latin,D,Information Technology,C,History,B,Geography,B
+2800,Josh,Wells,8,Yellow,Mathematics,D,Chemistry,C,Physics,D,Biology,B,English,A,German,A,Mandarin,A,Design & Technology,C,Religious Education,B,Physical Education,E,Latin,B,Information Technology,B,History,C,Geography,A
+2801,Joe,Briggs,9,Blue,Mathematics,B,Chemistry,B,Physics,B,Biology,C,English,A,Religious Studies,B,Food Technology,C,Spanish,C,History,B
+4200,Mary,Liddle,9,Blue,Mathematics,C,Chemistry,B,Physics,A*,Biology,C,English,A,Religious Studies,B,Resistant Materials Technology,B,German,C,Geography,B
+5601,Sarah-Jane,Langford,11,Red,Mathematics,A,Chemistry,A,Physics,B,Biology,B,English,B,Religious Studies,A,Resistant Materials Technology,A,French,B,History,C
+7000,Ryan-Mark,Simmons,11,Blue,Mathematics,B,Chemistry,B,Physics,A,Biology,C,English,A*,Religious Studies,B,Textiles,A,German,C,History,A
+7001,Cynthia,Noble,12,Blue,Mathematics,C,Psychology,B,Chemistry,A,Biology,B
+8500,Jasmine,Rhodes,12,Blue,Mathematics,C,Computing,A*,History,B,Economics,B
+8501,Joshua,Russell,13,Red,Mathematics,C,Further Mathematics,B,Computing,A
+9999,Christopher,Slater,13,Yellow,English,C,Religious Studies,B,Drama,B
+0001,Mark,Wallace,7,Red,Mathematics,A,Chemistry,B,Physics,B,Biology,C,English,B,French,C,Spanish,B,Design & Technology,A,Religious Education,A*,Physical Education,D,Latin,C,Information Technology,A,History,B,Geography,B
+1400,Joanne,Groves,7,Blue,Mathematics,B,Chemistry,B,Physics,B,Biology,A,English,A,German,C,Mandarin,D,Design & Technology,B,Religious Education,D,Physical Education,B,Latin,A,Information Technology,A,History,C,Geography,A
