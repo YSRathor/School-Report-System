@@ -1,3 +1,0 @@
-﻿0001,Joe,Briggs,9,Red,Maths,A,Psychology,B,English,B
-0002,Lewis,Daniels,10,Blue,Maths,B,Physics,C,Biology,A,Chemistry,B,English,C
-0003,Sarah-Jane,Langford,11,Yellow,Maths,C,Computing,B,Geography,A,History,B,Economics,B,Religous Studies,A,French,C
