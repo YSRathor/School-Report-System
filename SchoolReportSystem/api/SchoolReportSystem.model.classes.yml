@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  id: SchoolReportSystem.model.classes
+  children:
+  - SchoolReportSystem.model.classes.AcademicYear
+  - SchoolReportSystem.model.classes.School
+  - SchoolReportSystem.model.classes.Student
+  - SchoolReportSystem.model.classes.Subject
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  parent: SchoolReportSystem.model.classes
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+- uid: SchoolReportSystem.model.classes.School
+  commentId: T:SchoolReportSystem.model.classes.School
+  parent: SchoolReportSystem.model.classes
+  name: School
+  nameWithType: School
+  fullName: SchoolReportSystem.model.classes.School
+- uid: SchoolReportSystem.model.classes.Student
+  commentId: T:SchoolReportSystem.model.classes.Student
+  parent: SchoolReportSystem.model.classes
+  name: Student
+  nameWithType: Student
+  fullName: SchoolReportSystem.model.classes.Student
+- uid: SchoolReportSystem.model.classes.Subject
+  commentId: T:SchoolReportSystem.model.classes.Subject
+  parent: SchoolReportSystem.model.classes
+  name: Subject
+  nameWithType: Subject
+  fullName: SchoolReportSystem.model.classes.Subject
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes

@@ -1,0 +1,895 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.classes.School
+  commentId: T:SchoolReportSystem.model.classes.School
+  id: School
+  parent: SchoolReportSystem.model.classes
+  children:
+  - SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32)
+  - SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32,System.Int32)
+  - SchoolReportSystem.model.classes.School.AddYear(SchoolReportSystem.model.classes.AcademicYear)
+  - SchoolReportSystem.model.classes.School.AddYears(System.Int32,System.Int32)
+  - SchoolReportSystem.model.classes.School.GetEnumerator
+  - SchoolReportSystem.model.classes.School.GetSchoolName
+  - SchoolReportSystem.model.classes.School.GetYearByNo(System.Int32)
+  - SchoolReportSystem.model.classes.School.GetYears
+  - SchoolReportSystem.model.classes.School.ToString
+  langs:
+  - csharp
+  - vb
+  name: School
+  nameWithType: School
+  fullName: SchoolReportSystem.model.classes.School
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: School
+    path: model/classes/School.cs
+    startLine: 17
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: >-
+    This class defines a <code>School</code> object.
+
+
+    Implements IEnumerable to allow AcademicYear objects inside the School object to be iterated through.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: 'public class School : IEnumerable'
+    content.vb: >-
+      Public Class School
+          Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: School(String, Int32)
+  nameWithType: School.School(String, Int32)
+  fullName: SchoolReportSystem.model.classes.School.School(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: .ctor
+    path: model/classes/School.cs
+    startLine: 30
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This custom constructor is responsible for creating a School object.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Portsborough Secondary&quot;, 8);</code></pre>\nThis creates a School object with the name as &quot;Portsborough Secondary&quot; and  year as &apos;8&apos;."
+  syntax:
+    content: public School(string name, int year)
+    parameters:
+    - id: name
+      type: System.String
+      description: The school name.
+    - id: year
+      type: System.Int32
+      description: The year number.
+    content.vb: Public Sub New(name As String, year As Integer)
+  overload: SchoolReportSystem.model.classes.School.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.School.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: School(String, Int32, Int32)
+  nameWithType: School.School(String, Int32, Int32)
+  fullName: SchoolReportSystem.model.classes.School.School(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: .ctor
+    path: model/classes/School.cs
+    startLine: 68
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This alternate custom constructor is responsible for creating a School object.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Earlmount High&quot;, 7, 11);</code></pre>\nThis creates a School object with name as &quot;Earlmount High&quot;, with years 7 to 11."
+  syntax:
+    content: public School(string name, int first, int last)
+    parameters:
+    - id: name
+      type: System.String
+      description: The school name.
+    - id: first
+      type: System.Int32
+      description: The lowest school year.
+    - id: last
+      type: System.Int32
+      description: The highest school year
+    content.vb: Public Sub New(name As String, first As Integer, last As Integer)
+  overload: SchoolReportSystem.model.classes.School.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.AddYears(System.Int32,System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.School.AddYears(System.Int32,System.Int32)
+  id: AddYears(System.Int32,System.Int32)
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: AddYears(Int32, Int32)
+  nameWithType: School.AddYears(Int32, Int32)
+  fullName: SchoolReportSystem.model.classes.School.AddYears(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: AddYears
+    path: model/classes/School.cs
+    startLine: 116
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method stores a range of valid AcademicYear objects into the School object, dependent on the &apos;min&apos; and &apos;max&apos; parameters.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Berkshire High&quot;, 7, 8);\nsl.AddYears(9, 13);</code></pre>\nYears: 9, 10, 11, 12 and 13 have been added to &apos;sl&apos;."
+  syntax:
+    content: public void AddYears(int min, int max)
+    parameters:
+    - id: min
+      type: System.Int32
+      description: The minimum inclusive number value for the range.
+    - id: max
+      type: System.Int32
+      description: The maximum inclusive number value for the range.
+    content.vb: Public Sub AddYears(min As Integer, max As Integer)
+  overload: SchoolReportSystem.model.classes.School.AddYears*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.AddYear(SchoolReportSystem.model.classes.AcademicYear)
+  commentId: M:SchoolReportSystem.model.classes.School.AddYear(SchoolReportSystem.model.classes.AcademicYear)
+  id: AddYear(SchoolReportSystem.model.classes.AcademicYear)
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: AddYear(AcademicYear)
+  nameWithType: School.AddYear(AcademicYear)
+  fullName: SchoolReportSystem.model.classes.School.AddYear(SchoolReportSystem.model.classes.AcademicYear)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: AddYear
+    path: model/classes/School.cs
+    startLine: 139
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method stores a valid AcademicYear object into the School object.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Nottingham Secondary&quot;, 13);\nsl.AddYear(12);</code></pre>\nYear 12 has been added to &apos;sl&apos;."
+  syntax:
+    content: public void AddYear(AcademicYear y)
+    parameters:
+    - id: y
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: AcademicYear object to be added to the school.
+    content.vb: Public Sub AddYear(y As AcademicYear)
+  overload: SchoolReportSystem.model.classes.School.AddYear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.GetSchoolName
+  commentId: P:SchoolReportSystem.model.classes.School.GetSchoolName
+  id: GetSchoolName
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: GetSchoolName
+  nameWithType: School.GetSchoolName
+  fullName: SchoolReportSystem.model.classes.School.GetSchoolName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: GetSchoolName
+    path: model/classes/School.cs
+    startLine: 160
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the school&apos;s name.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Earlmount High&quot;, 7, 11);\nsl.GetSchoolName;</code></pre>\nThis will return &quot;Earlmount High&quot;."
+  syntax:
+    content: public string GetSchoolName { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetSchoolName.
+    content.vb: Public ReadOnly Property GetSchoolName As String
+  overload: SchoolReportSystem.model.classes.School.GetSchoolName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.School.GetYearByNo(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.School.GetYearByNo(System.Int32)
+  id: GetYearByNo(System.Int32)
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: GetYearByNo(Int32)
+  nameWithType: School.GetYearByNo(Int32)
+  fullName: SchoolReportSystem.model.classes.School.GetYearByNo(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: GetYearByNo
+    path: model/classes/School.cs
+    startLine: 175
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the AcademicYear object which is equal to &apos;yearNo&apos;.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Midwest College&quot;, 9, 11);\nsl.AddYears(12, 13);</code></pre>\nsl.GetYearByNo(13);\nYear 13 will be returned."
+  syntax:
+    content: public AcademicYear GetYearByNo(int yearNo)
+    parameters:
+    - id: yearNo
+      type: System.Int32
+      description: ''
+    return:
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: Returns the year with the matching year number specifed by the &apos;yearNo&apos; parameter.
+    content.vb: Public Function GetYearByNo(yearNo As Integer) As AcademicYear
+  overload: SchoolReportSystem.model.classes.School.GetYearByNo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.GetYears
+  commentId: P:SchoolReportSystem.model.classes.School.GetYears
+  id: GetYears
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: GetYears
+  nameWithType: School.GetYears
+  fullName: SchoolReportSystem.model.classes.School.GetYears
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: GetYears
+    path: model/classes/School.cs
+    startLine: 200
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the school years.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Earlmount High&quot;, 7, 11);\nsl.GetYears;</code></pre>\nThis will return {(7), (8), (9), (10), (11), (12), (13)}."
+  syntax:
+    content: public List<AcademicYear> GetYears { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SchoolReportSystem.model.classes.AcademicYear}
+      description: Returns the value of GetYears.
+    content.vb: Public ReadOnly Property GetYears As List(Of AcademicYear)
+  overload: SchoolReportSystem.model.classes.School.GetYears*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.School.GetEnumerator
+  commentId: M:SchoolReportSystem.model.classes.School.GetEnumerator
+  id: GetEnumerator
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: School.GetEnumerator()
+  fullName: SchoolReportSystem.model.classes.School.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: GetEnumerator
+    path: model/classes/School.cs
+    startLine: 207
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method returns the IEnumerator for the School class.
+  example: []
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: Returns the iteration of the non-generic collection for a School object.
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: SchoolReportSystem.model.classes.School.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.School.ToString
+  commentId: M:SchoolReportSystem.model.classes.School.ToString
+  id: ToString
+  parent: SchoolReportSystem.model.classes.School
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: School.ToString()
+  fullName: SchoolReportSystem.model.classes.School.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/School.cs
+    id: ToString
+    path: model/classes/School.cs
+    startLine: 218
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method overrides the default &apos;ToString()&apos; representation of the School class.
+  example:
+  - "\n<pre><code>School sl = new School(&quot;Holloway High&quot;, 7, 13);\nsl.ToString();</code></pre>"
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string representation of the School object.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SchoolReportSystem.model.classes.School.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: SchoolReportSystem.model.classes.School.#ctor*
+  commentId: Overload:SchoolReportSystem.model.classes.School.#ctor
+  name: School
+  nameWithType: School.School
+  fullName: SchoolReportSystem.model.classes.School.School
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SchoolReportSystem.model.classes.School.AddYears*
+  commentId: Overload:SchoolReportSystem.model.classes.School.AddYears
+  name: AddYears
+  nameWithType: School.AddYears
+  fullName: SchoolReportSystem.model.classes.School.AddYears
+- uid: SchoolReportSystem.model.classes.School.AddYear*
+  commentId: Overload:SchoolReportSystem.model.classes.School.AddYear
+  name: AddYear
+  nameWithType: School.AddYear
+  fullName: SchoolReportSystem.model.classes.School.AddYear
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  parent: SchoolReportSystem.model.classes
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+- uid: SchoolReportSystem.model.classes.School.GetSchoolName*
+  commentId: Overload:SchoolReportSystem.model.classes.School.GetSchoolName
+  name: GetSchoolName
+  nameWithType: School.GetSchoolName
+  fullName: SchoolReportSystem.model.classes.School.GetSchoolName
+- uid: SchoolReportSystem.model.classes.School.GetYearByNo*
+  commentId: Overload:SchoolReportSystem.model.classes.School.GetYearByNo
+  name: GetYearByNo
+  nameWithType: School.GetYearByNo
+  fullName: SchoolReportSystem.model.classes.School.GetYearByNo
+- uid: SchoolReportSystem.model.classes.School.GetYears*
+  commentId: Overload:SchoolReportSystem.model.classes.School.GetYears
+  name: GetYears
+  nameWithType: School.GetYears
+  fullName: SchoolReportSystem.model.classes.School.GetYears
+- uid: System.Collections.Generic.List{SchoolReportSystem.model.classes.AcademicYear}
+  commentId: T:System.Collections.Generic.List{SchoolReportSystem.model.classes.AcademicYear}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AcademicYear>
+  nameWithType: List<AcademicYear>
+  fullName: System.Collections.Generic.List<SchoolReportSystem.model.classes.AcademicYear>
+  nameWithType.vb: List(Of AcademicYear)
+  fullName.vb: System.Collections.Generic.List(Of SchoolReportSystem.model.classes.AcademicYear)
+  name.vb: List(Of AcademicYear)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SchoolReportSystem.model.classes.School.GetEnumerator*
+  commentId: Overload:SchoolReportSystem.model.classes.School.GetEnumerator
+  name: GetEnumerator
+  nameWithType: School.GetEnumerator
+  fullName: SchoolReportSystem.model.classes.School.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.School.ToString*
+  commentId: Overload:SchoolReportSystem.model.classes.School.ToString
+  name: ToString
+  nameWithType: School.ToString
+  fullName: SchoolReportSystem.model.classes.School.ToString

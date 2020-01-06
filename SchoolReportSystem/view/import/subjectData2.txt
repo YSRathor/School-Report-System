@@ -1,0 +1,124 @@
+﻿MAT4,Mathematics,B,B,4201
+CHM4,Chemistry,A,A,4201
+PHY4,Physics,C,B,4201
+BIO4,Biology,B,A,4201
+ENG4,English,A,A,4201
+RS4,Religious Studies,A,A*,4201
+GD4,Graphic Design,B,C,4201
+MDN4,Mandarin,B,C,4201
+GEO4,Geography,C,D,4201
+MAT4,Mathematics,A,A,5600
+CHM4,Chemistry,B,B,5600
+PHY4,Physics,A,B,5600
+BIO4,Biology,B,C,5600
+ENG4,English,C,B,5600
+RS4,Religious Studies,C,B,5600
+ART4,Art,A*,A,5600
+SPN4,Spanish,B,C,5600
+GEO4,Geography,B,A,5600
+MAT3,Mathematics,C,B,1401
+CHM3,Chemistry,A,B,1401
+PHY3,Physics,C,B,1401
+BIO3,Biology,B,A,1401
+ENG3,English,C,B,1401
+FRE3,French,A,C,1401
+SPN3,Spanish,B,B,1401
+DT3,Design & Technology,C,B,1401
+RE3,Religious Education,B,B,1401
+PHE3,Physical Education,A,C,1401
+LTN3,Latin,D,B,1401
+IT3,Information Technology,C,B,1401
+HIS3,History,B,B,1401
+GEO3,Geography,B,A,1401
+MAT3,Mathematics,D,C,2800
+CHM3,Chemistry,C,B,2800
+PHY3,Physics,D,C,2800
+BIO3,Biology,B,A,2800
+ENG3,English,A,B,2800
+GMN3,German,A,B,2800
+MDN3,Mandarin,A,C,2800
+DT3,Design & Technology,C,C,2800
+RE3,Religious Education,B,A,2800
+PHE3,Physical Education,E,B,2800
+LTN3,Latin,B,A,2800
+IT3,Information Technology,B,A,2800
+HIS3,History,C,B,2800
+GEO3,Geography,A,A,2800
+MAT4,Mathematics,B,A,2801
+CHM4,Chemistry,B,A,2801
+PHY4,Physics,B,A,2801
+BIO4,Biology,C,B,2801
+ENG4,English,A*,A,2801
+RS4,Religious Studies,B,A,2801
+FT4,Food Technology,C,B,2801
+SPN4,Spanish,C,B,2801
+HIS4,History,B,A,2801
+MAS4,Mathematics,C,B,4200
+CHM4,Chemistry,B,B,4200
+PHY4,Physics,A*,A*,4200
+BIO4,Biology,C,B,4200
+ENG4,English,A,A,4200
+RS4,Religious Studies,B,B,4200
+RMT4,Resistant Materials Technology,B,A*,4200
+GMN4,German,C,A,4200
+GEO4,Geography,B,C,4200
+MAT4,Mathematics,A,A*,5601
+CHM4,Chemistry,A,A,5601
+PHY4,Physics,B,A,5601
+BIO4,Biology,B,A,5601
+ENG4,English,B,B,5601
+RS4,Religious Studies,A,B,5601
+RMT4,Resistant Materials Technology,A,B,5601
+FRE4,French,B,B,5601
+HIS4,History,C,A,5601
+MAT4,Mathematics,B,A,7000
+CHM4,Chemistry,B,A*,7000
+PHY4,Physics,A,A*,7000
+BIO4,Biology,C,B,7000
+ENG4,English,A*,A,7000
+RS4,Religious Studies,B,A,7000
+TXT4,Textiles,A,A,7000
+GMN4,German,C,B,7000
+HIS4,History,A,A*,7000
+MAT5A,Mathematics,C,A,7001
+PSY5A,Psychology,B,A,7001
+CHM5A,Chemistry,A,A*,7001
+BIO5A,Biology,B,A,7001
+MAT5A,Mathematics,C,B,8500
+COM5A,Computing,A*,A,8500
+HIS5A,History,B,A,8500
+ECO5A,Economics,B,B,8500
+MAT5B,Mathematics,C,A,8501
+FMAT5B,Further Mathematics,B,B,8501
+COM5B,Computing,A,B,8501
+ENG5B,English,C,A,9999
+RS5B,Religious Studies,B,B,9999
+DMA5B,Drama,B,A,9999
+MAT3,Mathematics,A,A,0001
+CHM3,Chemistry,B,A,0001
+PHY3,Physics,B,A,0001
+BIO3,Biology,C,B,0001
+ENG3,English,B,A,0001
+FRE3,French,C,B,0001
+SPN3,Spanish,B,B,0001
+DT3,Design & Technology,A,A,0001
+RE3,Religious Education,A*,A,0001
+PHE3,Physical Education,D,B,0001
+LTN3,Latin,C,B,0001
+IT3,Information Technology,A,A,0001
+HIS3,History,B,A,0001
+GEO3,Geography,B,B,0001
+MAT3,Mathematics,B,A,1400
+CHM3,Chemistry,B,A,1400
+PHY3,Physics,B,B,1400
+BIO3,Biology,A,B,1400
+ENG3,English,A,B,1400
+GMN3,German,C,B,1400
+MDN3,Mandarin,D,B,1400
+DT3,Design & Technology,B,A,1400
+RE3,Religious Education,D,C,1400
+PHE3,Physical Education,B,A,1400
+LTN3,Latin,A,A,1400
+IT3,Information Technology,A,C,1400
+HIS3,History,C,B,1400
+GEO3,Geography,A,B,1400

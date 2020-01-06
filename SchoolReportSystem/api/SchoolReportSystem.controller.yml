@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.controller
+  commentId: N:SchoolReportSystem.controller
+  id: SchoolReportSystem.controller
+  children:
+  - SchoolReportSystem.controller.ReportBuilder
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.controller
+  nameWithType: SchoolReportSystem.controller
+  fullName: SchoolReportSystem.controller
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.controller.ReportBuilder
+  commentId: T:SchoolReportSystem.controller.ReportBuilder
+  name: ReportBuilder
+  nameWithType: ReportBuilder
+  fullName: SchoolReportSystem.controller.ReportBuilder

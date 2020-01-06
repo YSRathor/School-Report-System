@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.view.import
+  commentId: N:SchoolReportSystem.view.import
+  id: SchoolReportSystem.view.import
+  children:
+  - SchoolReportSystem.view.import.ImportData
+  - SchoolReportSystem.view.import.ImportStudentData
+  - SchoolReportSystem.view.import.ImportSubjectData
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.view.import
+  nameWithType: SchoolReportSystem.view.import
+  fullName: SchoolReportSystem.view.import
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.view.import.ImportData
+  commentId: T:SchoolReportSystem.view.import.ImportData
+  parent: SchoolReportSystem.view.import
+  name: ImportData
+  nameWithType: ImportData
+  fullName: SchoolReportSystem.view.import.ImportData
+- uid: SchoolReportSystem.view.import.ImportStudentData
+  commentId: T:SchoolReportSystem.view.import.ImportStudentData
+  name: ImportStudentData
+  nameWithType: ImportStudentData
+  fullName: SchoolReportSystem.view.import.ImportStudentData
+- uid: SchoolReportSystem.view.import.ImportSubjectData
+  commentId: T:SchoolReportSystem.view.import.ImportSubjectData
+  name: ImportSubjectData
+  nameWithType: ImportSubjectData
+  fullName: SchoolReportSystem.view.import.ImportSubjectData
+- uid: SchoolReportSystem.view.import
+  commentId: N:SchoolReportSystem.view.import
+  name: SchoolReportSystem.view.import
+  nameWithType: SchoolReportSystem.view.import
+  fullName: SchoolReportSystem.view.import

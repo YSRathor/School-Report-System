@@ -1,0 +1,433 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.view.import.ImportData
+  commentId: T:SchoolReportSystem.view.import.ImportData
+  id: ImportData
+  parent: SchoolReportSystem.view.import
+  children:
+  - SchoolReportSystem.view.import.ImportData.#ctor
+  - SchoolReportSystem.view.import.ImportData.LoadAllData(SchoolReportSystem.model.classes.School)
+  langs:
+  - csharp
+  - vb
+  name: ImportData
+  nameWithType: ImportData
+  fullName: SchoolReportSystem.view.import.ImportData
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/view/import/ImportData.cs
+    id: ImportData
+    path: view/import/ImportData.cs
+    startLine: 11
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.view.import
+  summary: >-
+    This class is responsible for providing a main method which executes both main methods from the <code>ImportStudentData</code> and <code>ImportSubjectData</code> classes.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: public class ImportData
+    content.vb: Public Class ImportData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SchoolReportSystem.view.import.ImportData.#ctor
+  commentId: M:SchoolReportSystem.view.import.ImportData.#ctor
+  id: '#ctor'
+  parent: SchoolReportSystem.view.import.ImportData
+  langs:
+  - csharp
+  - vb
+  name: ImportData()
+  nameWithType: ImportData.ImportData()
+  fullName: SchoolReportSystem.view.import.ImportData.ImportData()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/view/import/ImportData.cs
+    id: .ctor
+    path: view/import/ImportData.cs
+    startLine: 18
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.view.import
+  summary: The default constructor responsible for creating a DataClass object.
+  example: []
+  syntax:
+    content: public ImportData()
+    content.vb: Public Sub New
+  overload: SchoolReportSystem.view.import.ImportData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.view.import.ImportData.LoadAllData(SchoolReportSystem.model.classes.School)
+  commentId: M:SchoolReportSystem.view.import.ImportData.LoadAllData(SchoolReportSystem.model.classes.School)
+  id: LoadAllData(SchoolReportSystem.model.classes.School)
+  parent: SchoolReportSystem.view.import.ImportData
+  langs:
+  - csharp
+  - vb
+  name: LoadAllData(School)
+  nameWithType: ImportData.LoadAllData(School)
+  fullName: SchoolReportSystem.view.import.ImportData.LoadAllData(SchoolReportSystem.model.classes.School)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/view/import/ImportData.cs
+    id: LoadAllData
+    path: view/import/ImportData.cs
+    startLine: 44
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.view.import
+  summary: This method is responsible for loading all student and subject data into the model classes.
+  example: []
+  syntax:
+    content: public void LoadAllData(School school)
+    parameters:
+    - id: school
+      type: SchoolReportSystem.model.classes.School
+      description: The School object to have all data stored inside it.
+    content.vb: Public Sub LoadAllData(school As School)
+  overload: SchoolReportSystem.view.import.ImportData.LoadAllData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SchoolReportSystem.view.import
+  commentId: N:SchoolReportSystem.view.import
+  name: SchoolReportSystem.view.import
+  nameWithType: SchoolReportSystem.view.import
+  fullName: SchoolReportSystem.view.import
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SchoolReportSystem.view.import.ImportData.#ctor*
+  commentId: Overload:SchoolReportSystem.view.import.ImportData.#ctor
+  name: ImportData
+  nameWithType: ImportData.ImportData
+  fullName: SchoolReportSystem.view.import.ImportData.ImportData
+- uid: SchoolReportSystem.view.import.ImportData.LoadAllData*
+  commentId: Overload:SchoolReportSystem.view.import.ImportData.LoadAllData
+  name: LoadAllData
+  nameWithType: ImportData.LoadAllData
+  fullName: SchoolReportSystem.view.import.ImportData.LoadAllData
+- uid: SchoolReportSystem.model.classes.School
+  commentId: T:SchoolReportSystem.model.classes.School
+  parent: SchoolReportSystem.model.classes
+  name: School
+  nameWithType: School
+  fullName: SchoolReportSystem.model.classes.School
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes

@@ -1,0 +1,1142 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  id: AcademicYear
+  parent: SchoolReportSystem.model.classes
+  children:
+  - SchoolReportSystem.model.classes.AcademicYear.#ctor(System.Int32)
+  - SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear(SchoolReportSystem.model.classes.Student)
+  - SchoolReportSystem.model.classes.AcademicYear.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  - SchoolReportSystem.model.classes.AcademicYear.GetEnumerator
+  - SchoolReportSystem.model.classes.AcademicYear.GetStudent(System.Int32)
+  - SchoolReportSystem.model.classes.AcademicYear.GetStudentById(System.String)
+  - SchoolReportSystem.model.classes.AcademicYear.GetStudents
+  - SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+  - SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents
+  - SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear(System.Int32)
+  - SchoolReportSystem.model.classes.AcademicYear.ToString
+  langs:
+  - csharp
+  - vb
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: AcademicYear
+    path: model/classes/AcademicYear.cs
+    startLine: 18
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: >-
+    This class defines a <code>AcademicYear</code> object.
+
+
+    Implements IEnumerable to allow Student objects inside the AcademicYear object to be iterated through.
+
+    Implements IComparable to allow AcademicYear objects to be compared.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: 'public class AcademicYear : IEnumerable, IComparable<AcademicYear>'
+    content.vb: >-
+      Public Class AcademicYear
+          Implements IEnumerable, IComparable(Of AcademicYear)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  - System.IComparable{SchoolReportSystem.model.classes.AcademicYear}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SchoolReportSystem.model.classes.AcademicYear.#ctor(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: AcademicYear(Int32)
+  nameWithType: AcademicYear.AcademicYear(Int32)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.AcademicYear(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: .ctor
+    path: model/classes/AcademicYear.cs
+    startLine: 31
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This custom constructor is responsible for creating an AcademicYear object.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(7);</code></pre>\nThis creates an AcademicYear object with the year as &apos;7&apos;.\n"
+  syntax:
+    content: public AcademicYear(int year)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The school year number.
+    content.vb: Public Sub New(year As Integer)
+  overload: SchoolReportSystem.model.classes.AcademicYear.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear(SchoolReportSystem.model.classes.Student)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear(SchoolReportSystem.model.classes.Student)
+  id: AddStudentToYear(SchoolReportSystem.model.classes.Student)
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: AddStudentToYear(Student)
+  nameWithType: AcademicYear.AddStudentToYear(Student)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear(SchoolReportSystem.model.classes.Student)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: AddStudentToYear
+    path: model/classes/AcademicYear.cs
+    startLine: 61
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method stores a valid Student object into the AcademicYear object.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(12);\nyr.AddStudentToYear(new Student(&quot;8126&quot;, &quot;Edward&quot;, &quot;Willis&quot;, 12, &quot;Red&quot;));</code></pre>\nA new student has been added to &apos;yr&apos;."
+  syntax:
+    content: public void AddStudentToYear(Student s)
+    parameters:
+    - id: s
+      type: SchoolReportSystem.model.classes.Student
+      description: Student object to be added to the year.
+    content.vb: Public Sub AddStudentToYear(s As Student)
+  overload: SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear(System.Int32)
+  id: RemoveStudentFromYear(System.Int32)
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: RemoveStudentFromYear(Int32)
+  nameWithType: AcademicYear.RemoveStudentFromYear(Int32)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: RemoveStudentFromYear
+    path: model/classes/AcademicYear.cs
+    startLine: 83
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method removes a student at a particular index position, inside the AcademicYear object.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(10);\nyr.AddStudentToYear(new Student(&quot;5003&quot;, &quot;Chris&quot;, &quot;Archer&quot;, 10, &quot;Green&quot;));\nyr.AddStudentToYear(new Student(&quot;4500&quot;, &quot;Hayden&quot;, &quot;Collins&quot;, 10, &quot;Red&quot;));\nyr.AddStudentToYear(new Student(&quot;5210&quot;, &quot;James&quot;, &quot;Holder&quot;, 10, &quot;Blue&quot;));\nyr.RemoveStudentFromYear(1);</code></pre>\nThe student at index position 1 (Hayden Collins) will be removed."
+  syntax:
+    content: public void RemoveStudentFromYear(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+    content.vb: Public Sub RemoveStudentFromYear(i As Integer)
+  overload: SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents
+  id: RemoveDuplicateStudents
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: RemoveDuplicateStudents()
+  nameWithType: AcademicYear.RemoveDuplicateStudents()
+  fullName: SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: RemoveDuplicateStudents
+    path: model/classes/AcademicYear.cs
+    startLine: 102
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method removes removes any duplicate students inside the AcademicYear object.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(9);\nyr.AddStudentToYear(new Student(&quot;2950&quot;, &quot;Wendy&quot;, &quot;Foakes&quot;, 9, &quot;Mauve&quot;));\nyr.AddStudentToYear(new Student(&quot;2950&quot;, &quot;Wendy&quot;, &quot;Foakes&quot;, 9, &quot;Mauve&quot;));\nyr.AddStudentToYear(new Student(&quot;4125&quot;, &quot;Stewart&quot;, &quot;Richards&quot;, 9, &quot;Teal&quot;));\nyr.RemoveStudentFromYear(1);</code></pre>\nThe second occurence of &quot;Wendy Foakes&quot; will be removed as it already exists once."
+  syntax:
+    content: public void RemoveDuplicateStudents()
+    content.vb: Public Sub RemoveDuplicateStudents
+  overload: SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+  commentId: P:SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+  id: GetYearNo
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: GetYearNo
+  nameWithType: AcademicYear.GetYearNo
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: GetYearNo
+    path: model/classes/AcademicYear.cs
+    startLine: 129
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the year&apos;s number.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(12);\nyr.GetYearNo;</code></pre>\nThis will return &apos;12&apos;."
+  syntax:
+    content: public int GetYearNo { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the value of GetYearNo.
+    content.vb: Public ReadOnly Property GetYearNo As Integer
+  overload: SchoolReportSystem.model.classes.AcademicYear.GetYearNo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudent(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.GetStudent(System.Int32)
+  id: GetStudent(System.Int32)
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: GetStudent(Int32)
+  nameWithType: AcademicYear.GetStudent(Int32)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudent(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: GetStudent
+    path: model/classes/AcademicYear.cs
+    startLine: 146
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the Student object located at a given index.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(13);\nyr.AddStudentToYear(new Student(&quot;8156&quot;, &quot;Colin&quot;, &quot;Jacobs&quot;, 13, &quot;Lilac&quot;));\nyr.AddStudentToYear(new Student(&quot;8601&quot;, &quot;Harris&quot;, &quot;Ford&quot;, 13, &quot;Rose&quot;));\nyr.AddStudentToYear(new Student(&quot;9509&quot;, &quot;Scott&quot;, &quot;Parker&quot;, 13, &quot;Gold&quot;));\nyr.GetStudent(2);</code></pre>\nThe student at index position 2 (Scott Parker) will be returned."
+  syntax:
+    content: public Student GetStudent(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index position of the desired Student object.
+    return:
+      type: SchoolReportSystem.model.classes.Student
+      description: Returns the student located at the index position specifed by the &apos;index&apos; parameter.
+    content.vb: Public Function GetStudent(index As Integer) As Student
+  overload: SchoolReportSystem.model.classes.AcademicYear.GetStudent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudentById(System.String)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.GetStudentById(System.String)
+  id: GetStudentById(System.String)
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: GetStudentById(String)
+  nameWithType: AcademicYear.GetStudentById(String)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudentById(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: GetStudentById
+    path: model/classes/AcademicYear.cs
+    startLine: 179
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the Student object matched by the &apos;ID&apos; string.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(7);\nyr.AddStudentToYear(new Student(&quot;0796&quot;, &quot;Christine&quot;, &quot;Lively&quot;, 7, &quot;Indigo&quot;));\nyr.AddStudentToYear(new Student(&quot;1472&quot;, &quot;Jessica&quot;, &quot;Rhodes&quot;, 7, &quot;Magenta&quot;));\nyr.AddStudentToYear(new Student(&quot;1140&quot;, &quot;Frank&quot;, &quot;London&quot;, 7, &quot;Cyan&quot;));\nyr.GetStudentByID(&quot;0796&quot;);</code></pre>\nThe student with the ID value &quot;0796&quot; (Christine Lively) will be returned."
+  syntax:
+    content: public Student GetStudentById(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID string to be used to get the matching Student object.
+    return:
+      type: SchoolReportSystem.model.classes.Student
+      description: Returns the student with the matching ID specifed by the &apos;ID&apos; parameter.
+    content.vb: Public Function GetStudentById(ID As String) As Student
+  overload: SchoolReportSystem.model.classes.AcademicYear.GetStudentById*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudents
+  commentId: P:SchoolReportSystem.model.classes.AcademicYear.GetStudents
+  id: GetStudents
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: GetStudents
+  nameWithType: AcademicYear.GetStudents
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudents
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: GetStudents
+    path: model/classes/AcademicYear.cs
+    startLine: 210
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves all students within the year.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(13);\nyr.AddStudentToYear(new Student(&quot;8156&quot;, &quot;Colin&quot;, &quot;Jacobs&quot;, 13, &quot;Lilac&quot;));\nyr.AddStudentToYear(new Student(&quot;8601&quot;, &quot;Harris&quot;, &quot;Ford&quot;, 13, &quot;Rose&quot;));\nyr.AddStudentToYear(new Student(&quot;9509&quot;, &quot;Scott&quot;, &quot;Parker&quot;, 13, &quot;Gold&quot;));\nyr.GetStudents;</code></pre>\nThis will return {(&quot;8156&quot;, &quot;Colin&quot;, &quot;Jacobs&quot;, 13, &quot;Lilac&quot;), (&quot;8601&quot;, &quot;Harris&quot;, &quot;Ford&quot;, 13, &quot;Rose&quot;), (&quot;9509&quot;, &quot;Scott&quot;, &quot;Parker&quot;, 13, &quot;Gold&quot;)}."
+  syntax:
+    content: public List<Student> GetStudents { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SchoolReportSystem.model.classes.Student}
+      description: Returns the value of GetStudents.
+    content.vb: Public ReadOnly Property GetStudents As List(Of Student)
+  overload: SchoolReportSystem.model.classes.AcademicYear.GetStudents*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetEnumerator
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.GetEnumerator
+  id: GetEnumerator
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: AcademicYear.GetEnumerator()
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: GetEnumerator
+    path: model/classes/AcademicYear.cs
+    startLine: 217
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method returns the IEnumerator for the AcademicYear class.
+  example: []
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: returns the iteration of the non-generic collection for an AcademicYear object.
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: SchoolReportSystem.model.classes.AcademicYear.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  id: CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(AcademicYear)
+  nameWithType: AcademicYear.CompareTo(AcademicYear)
+  fullName: SchoolReportSystem.model.classes.AcademicYear.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: CompareTo
+    path: model/classes/AcademicYear.cs
+    startLine: 232
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method compares one AcademicYear object with another AcademicYear object.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(7);\nAcademicYear yr2 = new AcademicYear(7);\nyr.CompareTo(yr2);</code></pre>\nThis returns <code>0</code>, as the objects have the exact same year number."
+  syntax:
+    content: public int CompareTo(AcademicYear other)
+    parameters:
+    - id: other
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: A different AcademicYear object.
+    return:
+      type: System.Int32
+      description: Returns 0 if the objects are the same and -1 or 1 if they are different.
+    content.vb: Public Function CompareTo(other As AcademicYear) As Integer
+  overload: SchoolReportSystem.model.classes.AcademicYear.CompareTo*
+  implements:
+  - System.IComparable{SchoolReportSystem.model.classes.AcademicYear}.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.AcademicYear.ToString
+  commentId: M:SchoolReportSystem.model.classes.AcademicYear.ToString
+  id: ToString
+  parent: SchoolReportSystem.model.classes.AcademicYear
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AcademicYear.ToString()
+  fullName: SchoolReportSystem.model.classes.AcademicYear.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/AcademicYear.cs
+    id: ToString
+    path: model/classes/AcademicYear.cs
+    startLine: 253
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method overrides the default &apos;ToString()&apos; representation of the AcademicYear class.
+  example:
+  - "\n<pre><code>AcademicYear yr = new AcademicYear(10);\nyr.ToString();</code></pre>"
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string representation of the AcademicYear object.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SchoolReportSystem.model.classes.AcademicYear.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IComparable{SchoolReportSystem.model.classes.AcademicYear}
+  commentId: T:System.IComparable{SchoolReportSystem.model.classes.AcademicYear}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<AcademicYear>
+  nameWithType: IComparable<AcademicYear>
+  fullName: System.IComparable<SchoolReportSystem.model.classes.AcademicYear>
+  nameWithType.vb: IComparable(Of AcademicYear)
+  fullName.vb: System.IComparable(Of SchoolReportSystem.model.classes.AcademicYear)
+  name.vb: IComparable(Of AcademicYear)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.AcademicYear.#ctor*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.#ctor
+  name: AcademicYear
+  nameWithType: AcademicYear.AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear.AcademicYear
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear
+  name: AddStudentToYear
+  nameWithType: AcademicYear.AddStudentToYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear.AddStudentToYear
+- uid: SchoolReportSystem.model.classes.Student
+  commentId: T:SchoolReportSystem.model.classes.Student
+  parent: SchoolReportSystem.model.classes
+  name: Student
+  nameWithType: Student
+  fullName: SchoolReportSystem.model.classes.Student
+- uid: SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear
+  name: RemoveStudentFromYear
+  nameWithType: AcademicYear.RemoveStudentFromYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear.RemoveStudentFromYear
+- uid: SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents
+  name: RemoveDuplicateStudents
+  nameWithType: AcademicYear.RemoveDuplicateStudents
+  fullName: SchoolReportSystem.model.classes.AcademicYear.RemoveDuplicateStudents
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetYearNo*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+  name: GetYearNo
+  nameWithType: AcademicYear.GetYearNo
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetYearNo
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudent*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.GetStudent
+  name: GetStudent
+  nameWithType: AcademicYear.GetStudent
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudent
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudentById*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.GetStudentById
+  name: GetStudentById
+  nameWithType: AcademicYear.GetStudentById
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudentById
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetStudents*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.GetStudents
+  name: GetStudents
+  nameWithType: AcademicYear.GetStudents
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetStudents
+- uid: System.Collections.Generic.List{SchoolReportSystem.model.classes.Student}
+  commentId: T:System.Collections.Generic.List{SchoolReportSystem.model.classes.Student}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Student>
+  nameWithType: List<Student>
+  fullName: System.Collections.Generic.List<SchoolReportSystem.model.classes.Student>
+  nameWithType.vb: List(Of Student)
+  fullName.vb: System.Collections.Generic.List(Of SchoolReportSystem.model.classes.Student)
+  name.vb: List(Of Student)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SchoolReportSystem.model.classes.AcademicYear.GetEnumerator*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.GetEnumerator
+  name: GetEnumerator
+  nameWithType: AcademicYear.GetEnumerator
+  fullName: SchoolReportSystem.model.classes.AcademicYear.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: SchoolReportSystem.model.classes.AcademicYear.CompareTo*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.CompareTo
+  name: CompareTo
+  nameWithType: AcademicYear.CompareTo
+  fullName: SchoolReportSystem.model.classes.AcademicYear.CompareTo
+- uid: System.IComparable{SchoolReportSystem.model.classes.AcademicYear}.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  commentId: M:System.IComparable{SchoolReportSystem.model.classes.AcademicYear}.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  parent: System.IComparable{SchoolReportSystem.model.classes.AcademicYear}
+  definition: System.IComparable`1.CompareTo(`0)
+  name: CompareTo(AcademicYear)
+  nameWithType: IComparable<AcademicYear>.CompareTo(AcademicYear)
+  fullName: System.IComparable<SchoolReportSystem.model.classes.AcademicYear>.CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  nameWithType.vb: IComparable(Of AcademicYear).CompareTo(AcademicYear)
+  fullName.vb: System.IComparable(Of SchoolReportSystem.model.classes.AcademicYear).CompareTo(SchoolReportSystem.model.classes.AcademicYear)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable<AcademicYear>.CompareTo
+    fullName: System.IComparable<SchoolReportSystem.model.classes.AcademicYear>.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable(Of AcademicYear).CompareTo
+    fullName: System.IComparable(Of SchoolReportSystem.model.classes.AcademicYear).CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SchoolReportSystem.model.classes.AcademicYear
+    name: AcademicYear
+    nameWithType: AcademicYear
+    fullName: SchoolReportSystem.model.classes.AcademicYear
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  parent: SchoolReportSystem.model.classes
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable<T>.CompareTo
+    fullName: System.IComparable<T>.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable(Of T).CompareTo
+    fullName: System.IComparable(Of T).CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.AcademicYear.ToString*
+  commentId: Overload:SchoolReportSystem.model.classes.AcademicYear.ToString
+  name: ToString
+  nameWithType: AcademicYear.ToString
+  fullName: SchoolReportSystem.model.classes.AcademicYear.ToString

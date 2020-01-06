@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.utility.ExportMethods
+  commentId: T:SchoolReportSystem.utility.ExportMethods
+  id: ExportMethods
+  parent: SchoolReportSystem.utility
+  children:
+  - SchoolReportSystem.utility.ExportMethods.AddSpaces(System.Int32)
+  - SchoolReportSystem.utility.ExportMethods.FixSpacing(System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject},SchoolReportSystem.model.classes.Subject,System.String)
+  - SchoolReportSystem.utility.ExportMethods.GenerateOutput(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear)
+  - SchoolReportSystem.utility.ExportMethods.GetCurrentDate
+  - SchoolReportSystem.utility.ExportMethods.GetCurrentTime
+  - SchoolReportSystem.utility.ExportMethods.OutputFeedback(System.String,System.Int32,System.Int32,System.Int32)
+  - SchoolReportSystem.utility.ExportMethods.OutputInformation(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ExportMethods
+  nameWithType: ExportMethods
+  fullName: SchoolReportSystem.utility.ExportMethods
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: ExportMethods
+    path: utility/ExportMethods.cs
+    startLine: 13
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: >-
+    This class contains some useful utility methods used to support the <code>ExportData</code> class.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: public static class ExportMethods
+    content.vb: Public Module ExportMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SchoolReportSystem.utility.ExportMethods.GenerateOutput(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear)
+  commentId: M:SchoolReportSystem.utility.ExportMethods.GenerateOutput(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear)
+  id: GenerateOutput(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear)
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: GenerateOutput(School, AcademicYear)
+  nameWithType: ExportMethods.GenerateOutput(School, AcademicYear)
+  fullName: SchoolReportSystem.utility.ExportMethods.GenerateOutput(SchoolReportSystem.model.classes.School, SchoolReportSystem.model.classes.AcademicYear)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: GenerateOutput
+    path: utility/ExportMethods.cs
+    startLine: 21
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method executes the &apos;OuputInformation&apos; method with differing parameters, depending on the year number of the AcademicYear object.
+  example: []
+  syntax:
+    content: public static void GenerateOutput(School sl, AcademicYear ay)
+    parameters:
+    - id: sl
+      type: SchoolReportSystem.model.classes.School
+      description: The School object that needs to be outputted.
+    - id: ay
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: The AcademicYear object that will have student reports built from.
+    content.vb: Public Shared Sub GenerateOutput(sl As School, ay As AcademicYear)
+  overload: SchoolReportSystem.utility.ExportMethods.GenerateOutput*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ExportMethods.OutputInformation(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear,System.String)
+  commentId: M:SchoolReportSystem.utility.ExportMethods.OutputInformation(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear,System.String)
+  id: OutputInformation(SchoolReportSystem.model.classes.School,SchoolReportSystem.model.classes.AcademicYear,System.String)
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: OutputInformation(School, AcademicYear, String)
+  nameWithType: ExportMethods.OutputInformation(School, AcademicYear, String)
+  fullName: SchoolReportSystem.utility.ExportMethods.OutputInformation(SchoolReportSystem.model.classes.School, SchoolReportSystem.model.classes.AcademicYear, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: OutputInformation
+    path: utility/ExportMethods.cs
+    startLine: 58
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method writes the report data for each student to their own text file.
+  example: []
+  syntax:
+    content: public static void OutputInformation(School sl, AcademicYear ay, string qual)
+    parameters:
+    - id: sl
+      type: SchoolReportSystem.model.classes.School
+      description: The School object that needs to be outputted.
+    - id: ay
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: The AcademicYear object that will have student reports built from.
+    - id: qual
+      type: System.String
+      description: The current adademic qualification that the student is enrolled on.
+    content.vb: Public Shared Sub OutputInformation(sl As School, ay As AcademicYear, qual As String)
+  overload: SchoolReportSystem.utility.ExportMethods.OutputInformation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ExportMethods.OutputFeedback(System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:SchoolReportSystem.utility.ExportMethods.OutputFeedback(System.String,System.Int32,System.Int32,System.Int32)
+  id: OutputFeedback(System.String,System.Int32,System.Int32,System.Int32)
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: OutputFeedback(String, Int32, Int32, Int32)
+  nameWithType: ExportMethods.OutputFeedback(String, Int32, Int32, Int32)
+  fullName: SchoolReportSystem.utility.ExportMethods.OutputFeedback(System.String, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: OutputFeedback
+    path: utility/ExportMethods.cs
+    startLine: 117
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns a message dependent on the performance of the student in terms of their target grades for each subject.
+  example: []
+  syntax:
+    content: public static string OutputFeedback(string fullName, int above, int equal, int below)
+    parameters:
+    - id: fullName
+      type: System.String
+      description: The student&apos;s full name.
+    - id: above
+      type: System.Int32
+      description: The number of subjects with grades that exceed the target
+    - id: equal
+      type: System.Int32
+      description: The number of subjects with grades that meet the target.
+    - id: below
+      type: System.Int32
+      description: The number of subjects with grades that lie below the target.
+    return:
+      type: System.String
+      description: A message that represents feedback on the overall performance of a student, in relation to their target grades.
+    content.vb: Public Shared Function OutputFeedback(fullName As String, above As Integer, equal As Integer, below As Integer) As String
+  overload: SchoolReportSystem.utility.ExportMethods.OutputFeedback*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ExportMethods.FixSpacing(System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject},SchoolReportSystem.model.classes.Subject,System.String)
+  commentId: M:SchoolReportSystem.utility.ExportMethods.FixSpacing(System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject},SchoolReportSystem.model.classes.Subject,System.String)
+  id: FixSpacing(System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject},SchoolReportSystem.model.classes.Subject,System.String)
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: FixSpacing(List<Subject>, Subject, String)
+  nameWithType: ExportMethods.FixSpacing(List<Subject>, Subject, String)
+  fullName: SchoolReportSystem.utility.ExportMethods.FixSpacing(System.Collections.Generic.List<SchoolReportSystem.model.classes.Subject>, SchoolReportSystem.model.classes.Subject, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: FixSpacing
+    path: utility/ExportMethods.cs
+    startLine: 193
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns a string of whitespaces that depend on the size of the field type string for a student.
+  example: []
+  syntax:
+    content: public static string FixSpacing(List<Subject> subjects, Subject s, string type)
+    parameters:
+    - id: subjects
+      type: System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+      description: The list of subjects that need to be iterated through.
+    - id: s
+      type: SchoolReportSystem.model.classes.Subject
+      description: The current subject which requires one of its fields to be spaced out neatly with additional whitespaces.
+    - id: type
+      type: System.String
+      description: The type of string that needs to whitespaces inserted next to it.
+    return:
+      type: System.String
+      description: The number of whitespaces required to space out the subject&apos;s field string.
+    content.vb: Public Shared Function FixSpacing(subjects As List(Of Subject), s As Subject, type As String) As String
+  overload: SchoolReportSystem.utility.ExportMethods.FixSpacing*
+  nameWithType.vb: ExportMethods.FixSpacing(List(Of Subject), Subject, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SchoolReportSystem.utility.ExportMethods.FixSpacing(System.Collections.Generic.List(Of SchoolReportSystem.model.classes.Subject), SchoolReportSystem.model.classes.Subject, System.String)
+  name.vb: FixSpacing(List(Of Subject), Subject, String)
+- uid: SchoolReportSystem.utility.ExportMethods.AddSpaces(System.Int32)
+  commentId: M:SchoolReportSystem.utility.ExportMethods.AddSpaces(System.Int32)
+  id: AddSpaces(System.Int32)
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: AddSpaces(Int32)
+  nameWithType: ExportMethods.AddSpaces(Int32)
+  fullName: SchoolReportSystem.utility.ExportMethods.AddSpaces(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: AddSpaces
+    path: utility/ExportMethods.cs
+    startLine: 237
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method simply returns a string of whitespaces with a quantity solely dependant on the int &apos;no&apos; parameter.
+  example: []
+  syntax:
+    content: public static string AddSpaces(int no)
+    parameters:
+    - id: no
+      type: System.Int32
+      description: The number of whitespace characters required.
+    return:
+      type: System.String
+      description: Whitespaces with a quantity equal to the &apos;no&apos; parameter.
+    content.vb: Public Shared Function AddSpaces(no As Integer) As String
+  overload: SchoolReportSystem.utility.ExportMethods.AddSpaces*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ExportMethods.GetCurrentDate
+  commentId: M:SchoolReportSystem.utility.ExportMethods.GetCurrentDate
+  id: GetCurrentDate
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentDate()
+  nameWithType: ExportMethods.GetCurrentDate()
+  fullName: SchoolReportSystem.utility.ExportMethods.GetCurrentDate()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: GetCurrentDate
+    path: utility/ExportMethods.cs
+    startLine: 257
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns the current date in the &apos;DD/MM/YYYY&apos; format.
+  example: []
+  syntax:
+    content: public static string GetCurrentDate()
+    return:
+      type: System.String
+      description: The current date in the specified string format.
+    content.vb: Public Shared Function GetCurrentDate As String
+  overload: SchoolReportSystem.utility.ExportMethods.GetCurrentDate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ExportMethods.GetCurrentTime
+  commentId: M:SchoolReportSystem.utility.ExportMethods.GetCurrentTime
+  id: GetCurrentTime
+  parent: SchoolReportSystem.utility.ExportMethods
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentTime()
+  nameWithType: ExportMethods.GetCurrentTime()
+  fullName: SchoolReportSystem.utility.ExportMethods.GetCurrentTime()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ExportMethods.cs
+    id: GetCurrentTime
+    path: utility/ExportMethods.cs
+    startLine: 267
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns the current time in the &apos;HH:MM:SS&apos; format.
+  example: []
+  syntax:
+    content: public static string GetCurrentTime()
+    return:
+      type: System.String
+      description: The current time in the specified string format.
+    content.vb: Public Shared Function GetCurrentTime As String
+  overload: SchoolReportSystem.utility.ExportMethods.GetCurrentTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SchoolReportSystem.utility
+  commentId: N:SchoolReportSystem.utility
+  name: SchoolReportSystem.utility
+  nameWithType: SchoolReportSystem.utility
+  fullName: SchoolReportSystem.utility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SchoolReportSystem.utility.ExportMethods.GenerateOutput*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.GenerateOutput
+  name: GenerateOutput
+  nameWithType: ExportMethods.GenerateOutput
+  fullName: SchoolReportSystem.utility.ExportMethods.GenerateOutput
+- uid: SchoolReportSystem.model.classes.School
+  commentId: T:SchoolReportSystem.model.classes.School
+  parent: SchoolReportSystem.model.classes
+  name: School
+  nameWithType: School
+  fullName: SchoolReportSystem.model.classes.School
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  parent: SchoolReportSystem.model.classes
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+- uid: SchoolReportSystem.utility.ExportMethods.OutputInformation*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.OutputInformation
+  name: OutputInformation
+  nameWithType: ExportMethods.OutputInformation
+  fullName: SchoolReportSystem.utility.ExportMethods.OutputInformation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SchoolReportSystem.utility.ExportMethods.OutputFeedback*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.OutputFeedback
+  name: OutputFeedback
+  nameWithType: ExportMethods.OutputFeedback
+  fullName: SchoolReportSystem.utility.ExportMethods.OutputFeedback
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SchoolReportSystem.utility.ExportMethods.FixSpacing*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.FixSpacing
+  name: FixSpacing
+  nameWithType: ExportMethods.FixSpacing
+  fullName: SchoolReportSystem.utility.ExportMethods.FixSpacing
+- uid: System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+  commentId: T:System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Subject>
+  nameWithType: List<Subject>
+  fullName: System.Collections.Generic.List<SchoolReportSystem.model.classes.Subject>
+  nameWithType.vb: List(Of Subject)
+  fullName.vb: System.Collections.Generic.List(Of SchoolReportSystem.model.classes.Subject)
+  name.vb: List(Of Subject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.Subject
+    name: Subject
+    nameWithType: Subject
+    fullName: SchoolReportSystem.model.classes.Subject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.Subject
+    name: Subject
+    nameWithType: Subject
+    fullName: SchoolReportSystem.model.classes.Subject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.Subject
+  commentId: T:SchoolReportSystem.model.classes.Subject
+  parent: SchoolReportSystem.model.classes
+  name: Subject
+  nameWithType: Subject
+  fullName: SchoolReportSystem.model.classes.Subject
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SchoolReportSystem.utility.ExportMethods.AddSpaces*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.AddSpaces
+  name: AddSpaces
+  nameWithType: ExportMethods.AddSpaces
+  fullName: SchoolReportSystem.utility.ExportMethods.AddSpaces
+- uid: SchoolReportSystem.utility.ExportMethods.GetCurrentDate*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.GetCurrentDate
+  name: GetCurrentDate
+  nameWithType: ExportMethods.GetCurrentDate
+  fullName: SchoolReportSystem.utility.ExportMethods.GetCurrentDate
+- uid: SchoolReportSystem.utility.ExportMethods.GetCurrentTime*
+  commentId: Overload:SchoolReportSystem.utility.ExportMethods.GetCurrentTime
+  name: GetCurrentTime
+  nameWithType: ExportMethods.GetCurrentTime
+  fullName: SchoolReportSystem.utility.ExportMethods.GetCurrentTime

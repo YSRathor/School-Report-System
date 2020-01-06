@@ -1,0 +1,555 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.validation.SubjectValidation
+  commentId: T:SchoolReportSystem.model.validation.SubjectValidation
+  id: SubjectValidation
+  parent: SchoolReportSystem.model.validation
+  children:
+  - SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid(System.String,System.String)
+  - SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid(System.String)
+  - SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SubjectValidation
+  nameWithType: SubjectValidation
+  fullName: SchoolReportSystem.model.validation.SubjectValidation
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/validation/SubjectValidation.cs
+    id: SubjectValidation
+    path: model/validation/SubjectValidation.cs
+    startLine: 11
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.validation
+  summary: >-
+    This important class contains utility methods that validate some of the constructor arguments for the objects created by the <code>Subject</code> class.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: public static class SubjectValidation
+    content.vb: Public Module SubjectValidation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid(System.String)
+  commentId: M:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid(System.String)
+  id: IsSubjectIDValid(System.String)
+  parent: SchoolReportSystem.model.validation.SubjectValidation
+  langs:
+  - csharp
+  - vb
+  name: IsSubjectIDValid(String)
+  nameWithType: SubjectValidation.IsSubjectIDValid(String)
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/validation/SubjectValidation.cs
+    id: IsSubjectIDValid
+    path: model/validation/SubjectValidation.cs
+    startLine: 24
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.validation
+  summary: This method checks if the ID field of a Subject object is valid and returns a tuple of boolean and string, which depends on the validity.
+  example: []
+  syntax:
+    content: public static (bool, string) IsSubjectIDValid(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The subject ID to be validated.
+    return:
+      type: System.ValueTuple{System.Boolean,System.String}
+      description: A tuple of a boolean true/false dependent on the validity of the subject ID and a helpful status message.
+    content.vb: Public Shared Function IsSubjectIDValid(ID As String) As(Boolean, String)
+  overload: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid(System.String)
+  commentId: M:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid(System.String)
+  id: IsSubjectNameValid(System.String)
+  parent: SchoolReportSystem.model.validation.SubjectValidation
+  langs:
+  - csharp
+  - vb
+  name: IsSubjectNameValid(String)
+  nameWithType: SubjectValidation.IsSubjectNameValid(String)
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/validation/SubjectValidation.cs
+    id: IsSubjectNameValid
+    path: model/validation/SubjectValidation.cs
+    startLine: 64
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.validation
+  summary: >-
+    This method checks if the subject name is valid and returns a tuple of boolean and string, with values that depend on the validity of the subject name.
+
+    As there a potential of different types of subject names depending on different conditions, each one is sectioned in a seperate part of the main IF statement.
+  example: []
+  syntax:
+    content: public static (bool, string) IsSubjectNameValid(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The subject name to be validated.
+    return:
+      type: System.ValueTuple{System.Boolean,System.String}
+      description: A tuple of a boolean true/false dependent on the validity of the subject name and a helpful status message.
+    content.vb: Public Shared Function IsSubjectNameValid(name As String) As(Boolean, String)
+  overload: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid(System.String,System.String)
+  commentId: M:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid(System.String,System.String)
+  id: IsSubjectGradeValid(System.String,System.String)
+  parent: SchoolReportSystem.model.validation.SubjectValidation
+  langs:
+  - csharp
+  - vb
+  name: IsSubjectGradeValid(String, String)
+  nameWithType: SubjectValidation.IsSubjectGradeValid(String, String)
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/validation/SubjectValidation.cs
+    id: IsSubjectGradeValid
+    path: model/validation/SubjectValidation.cs
+    startLine: 197
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.validation
+  summary: This method checks if the subject grade is valid and returns a tuple of boolean and string, which depends on the validity.
+  example: []
+  syntax:
+    content: public static (bool, string) IsSubjectGradeValid(string grade, string type)
+    parameters:
+    - id: grade
+      type: System.String
+      description: The subject grade string to be validated.
+    - id: type
+      type: System.String
+      description: The type of subject grade (actual/expected).
+    return:
+      type: System.ValueTuple{System.Boolean,System.String}
+      description: A tuple of a boolean true/false dependent on the validity of the grade string and a helpful status message.
+    content.vb: Public Shared Function IsSubjectGradeValid(grade As String, type As String) As(Boolean, String)
+  overload: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SchoolReportSystem.model.validation
+  commentId: N:SchoolReportSystem.model.validation
+  name: SchoolReportSystem.model.validation
+  nameWithType: SchoolReportSystem.model.validation
+  fullName: SchoolReportSystem.model.validation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid*
+  commentId: Overload:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid
+  name: IsSubjectIDValid
+  nameWithType: SubjectValidation.IsSubjectIDValid
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectIDValid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueTuple{System.Boolean,System.String}
+  commentId: T:System.ValueTuple{System.Boolean,System.String}
+  parent: System
+  isExternal: true
+  name: ValueTuple<Boolean, String>
+  nameWithType: ValueTuple<Boolean, String>
+  fullName: System.ValueTuple<System.Boolean, System.String>
+  nameWithType.vb: ValueTuple(Of Boolean, String)
+  fullName.vb: System.ValueTuple(Of System.Boolean, System.String)
+  name.vb: ValueTuple(Of Boolean, String)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid*
+  commentId: Overload:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid
+  name: IsSubjectNameValid
+  nameWithType: SubjectValidation.IsSubjectNameValid
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectNameValid
+- uid: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid*
+  commentId: Overload:SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid
+  name: IsSubjectGradeValid
+  nameWithType: SubjectValidation.IsSubjectGradeValid
+  fullName: SchoolReportSystem.model.validation.SubjectValidation.IsSubjectGradeValid

@@ -1,0 +1,1321 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.classes.Student
+  commentId: T:SchoolReportSystem.model.classes.Student
+  id: Student
+  parent: SchoolReportSystem.model.classes
+  children:
+  - SchoolReportSystem.model.classes.Student.#ctor(System.String,System.String,System.String,System.Int32,System.String)
+  - SchoolReportSystem.model.classes.Student.AddSubjectToStudent(SchoolReportSystem.model.classes.Subject)
+  - SchoolReportSystem.model.classes.Student.CompareTo(SchoolReportSystem.model.classes.Student)
+  - SchoolReportSystem.model.classes.Student.GetClassName
+  - SchoolReportSystem.model.classes.Student.GetFilePath
+  - SchoolReportSystem.model.classes.Student.GetForename
+  - SchoolReportSystem.model.classes.Student.GetFullName
+  - SchoolReportSystem.model.classes.Student.GetStudentID
+  - SchoolReportSystem.model.classes.Student.GetSubject(System.Int32)
+  - SchoolReportSystem.model.classes.Student.GetSubjects
+  - SchoolReportSystem.model.classes.Student.GetSurname
+  - SchoolReportSystem.model.classes.Student.GetTargetCount(System.String)
+  - SchoolReportSystem.model.classes.Student.GetYear
+  - SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects
+  - SchoolReportSystem.model.classes.Student.RemoveSubject(System.Int32)
+  - SchoolReportSystem.model.classes.Student.ToString
+  langs:
+  - csharp
+  - vb
+  name: Student
+  nameWithType: Student
+  fullName: SchoolReportSystem.model.classes.Student
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: Student
+    path: model/classes/Student.cs
+    startLine: 17
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: >-
+    This class defines a <code>Student</code> object.
+
+
+    Implements IComparable to allow Student objects to be compared.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: 'public class Student : IComparable<Student>'
+    content.vb: >-
+      Public Class Student
+          Implements IComparable(Of Student)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IComparable{SchoolReportSystem.model.classes.Student}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SchoolReportSystem.model.classes.Student.#ctor(System.String,System.String,System.String,System.Int32,System.String)
+  commentId: M:SchoolReportSystem.model.classes.Student.#ctor(System.String,System.String,System.String,System.Int32,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.Int32,System.String)'
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: Student(String, String, String, Int32, String)
+  nameWithType: Student.Student(String, String, String, Int32, String)
+  fullName: SchoolReportSystem.model.classes.Student.Student(System.String, System.String, System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: .ctor
+    path: model/classes/Student.cs
+    startLine: 34
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This custom constructor is responsible for creating a Student object.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);</code></pre>\nThis creates a Student object with the ID value as &quot;0007&quot;, first name as &quot;John&quot;, last name as &quot;Smith&quot;, school year as &apos;9&apos; and class name as &quot;Grey&quot;.\n"
+  syntax:
+    content: public Student(string ID, string f_name, string l_name, int year, string clName)
+    parameters:
+    - id: ID
+      type: System.String
+      description: A student&apos;s unique 4-digit ID number.
+    - id: f_name
+      type: System.String
+      description: A student&apos;s first name.
+    - id: l_name
+      type: System.String
+      description: A student&apos;s last name.
+    - id: year
+      type: System.Int32
+      description: A student&apos;s current school year.
+    - id: clName
+      type: System.String
+      description: A student&apos;s class name.
+    content.vb: Public Sub New(ID As String, f_name As String, l_name As String, year As Integer, clName As String)
+  overload: SchoolReportSystem.model.classes.Student.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.AddSubjectToStudent(SchoolReportSystem.model.classes.Subject)
+  commentId: M:SchoolReportSystem.model.classes.Student.AddSubjectToStudent(SchoolReportSystem.model.classes.Subject)
+  id: AddSubjectToStudent(SchoolReportSystem.model.classes.Subject)
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: AddSubjectToStudent(Subject)
+  nameWithType: Student.AddSubjectToStudent(Subject)
+  fullName: SchoolReportSystem.model.classes.Student.AddSubjectToStudent(SchoolReportSystem.model.classes.Subject)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: AddSubjectToStudent
+    path: model/classes/Student.cs
+    startLine: 122
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method stores a valid Subject object into the Student object.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0021&quot;, &quot;Jane&quot;, &quot;Harper&quot;, 12, &quot;Navy&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;PSY4&quot;, &quot;Psychology&quot;, &quot;C&quot;, &quot;A&quot;));</code></pre>\nA new subject has been added to &apos;sd&apos;."
+  syntax:
+    content: public void AddSubjectToStudent(Subject s)
+    parameters:
+    - id: s
+      type: SchoolReportSystem.model.classes.Subject
+      description: Subject object to be added to the student.
+    content.vb: Public Sub AddSubjectToStudent(s As Subject)
+  overload: SchoolReportSystem.model.classes.Student.AddSubjectToStudent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects
+  commentId: M:SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects
+  id: RemoveDuplicateSubjects
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: RemoveDuplicateSubjects()
+  nameWithType: Student.RemoveDuplicateSubjects()
+  fullName: SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: RemoveDuplicateSubjects
+    path: model/classes/Student.cs
+    startLine: 153
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method removes any duplicate subjects inside the Student object.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;5001&quot;, &quot;Tom&quot;, &quot;Curry&quot;, 10, &quot;Purple&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;GEO3&quot;, &quot;Geography&quot;, &quot;A&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;HIS3&quot;, &quot;History&quot;, &quot;B&quot;, &quot;A*&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;GEO3&quot;, &quot;Geography&quot;, &quot;A&quot;, &quot;B&quot;));\nsd.RemoveDuplicateSubjects();</code></pre>\nThe second occurence of &apos;Geography&apos; will be removed as it already exists once.\n"
+  syntax:
+    content: public void RemoveDuplicateSubjects()
+    content.vb: Public Sub RemoveDuplicateSubjects
+  overload: SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.RemoveSubject(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.Student.RemoveSubject(System.Int32)
+  id: RemoveSubject(System.Int32)
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: RemoveSubject(Int32)
+  nameWithType: Student.RemoveSubject(Int32)
+  fullName: SchoolReportSystem.model.classes.Student.RemoveSubject(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: RemoveSubject
+    path: model/classes/Student.cs
+    startLine: 183
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method removes a subject at a particular index position, inside the Student object.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;2608&quot;, &quot;Bradley&quot;, &quot;Wiley&quot;, 13, &quot;Bronze&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;FRE3&quot;, &quot;French&quot;, &quot;B&quot;, &quot;A&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;CHM3&quot;, &quot;Chemistry&quot;, &quot;A*&quot;, &quot;A&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;ENG3&quot;, &quot;English&quot;, &quot;C&quot;, &quot;B&quot;));\nsd.RemoveSubject(2);</code></pre>\nThe subject at index position 2 (English) will be removed."
+  syntax:
+    content: public void RemoveSubject(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index where the subject is to be removed from.
+    content.vb: Public Sub RemoveSubject(i As Integer)
+  overload: SchoolReportSystem.model.classes.Student.RemoveSubject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.GetStudentID
+  commentId: P:SchoolReportSystem.model.classes.Student.GetStudentID
+  id: GetStudentID
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetStudentID
+  nameWithType: Student.GetStudentID
+  fullName: SchoolReportSystem.model.classes.Student.GetStudentID
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetStudentID
+    path: model/classes/Student.cs
+    startLine: 201
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s ID.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetStudentID;</code></pre>\nThis will return &quot;0007&quot;."
+  syntax:
+    content: public string GetStudentID { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetStudentID.
+    content.vb: Public ReadOnly Property GetStudentID As String
+  overload: SchoolReportSystem.model.classes.Student.GetStudentID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetForename
+  commentId: P:SchoolReportSystem.model.classes.Student.GetForename
+  id: GetForename
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetForename
+  nameWithType: Student.GetForename
+  fullName: SchoolReportSystem.model.classes.Student.GetForename
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetForename
+    path: model/classes/Student.cs
+    startLine: 213
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s first name.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetForename;</code></pre>\nThis will return &quot;John&quot;."
+  syntax:
+    content: public string GetForename { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetForename.
+    content.vb: Public ReadOnly Property GetForename As String
+  overload: SchoolReportSystem.model.classes.Student.GetForename*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetSurname
+  commentId: P:SchoolReportSystem.model.classes.Student.GetSurname
+  id: GetSurname
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetSurname
+  nameWithType: Student.GetSurname
+  fullName: SchoolReportSystem.model.classes.Student.GetSurname
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetSurname
+    path: model/classes/Student.cs
+    startLine: 225
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s last name.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetSurname;</code></pre>\nThis will return &quot;Smith&quot;."
+  syntax:
+    content: public string GetSurname { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetSurname.
+    content.vb: Public ReadOnly Property GetSurname As String
+  overload: SchoolReportSystem.model.classes.Student.GetSurname*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetFullName
+  commentId: P:SchoolReportSystem.model.classes.Student.GetFullName
+  id: GetFullName
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetFullName
+  nameWithType: Student.GetFullName
+  fullName: SchoolReportSystem.model.classes.Student.GetFullName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetFullName
+    path: model/classes/Student.cs
+    startLine: 237
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s full name.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetFullName;</code></pre>\nThis will return &quot;John Smith&quot;."
+  syntax:
+    content: public string GetFullName { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the concatenated value of GetForname and GetSurname
+    content.vb: Public ReadOnly Property GetFullName As String
+  overload: SchoolReportSystem.model.classes.Student.GetFullName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetYear
+  commentId: P:SchoolReportSystem.model.classes.Student.GetYear
+  id: GetYear
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetYear
+  nameWithType: Student.GetYear
+  fullName: SchoolReportSystem.model.classes.Student.GetYear
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetYear
+    path: model/classes/Student.cs
+    startLine: 249
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s current school year.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetYear;</code></pre>\nThis will return &apos;9&apos;."
+  syntax:
+    content: public int GetYear { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns the value of GetYear.
+    content.vb: Public ReadOnly Property GetYear As Integer
+  overload: SchoolReportSystem.model.classes.Student.GetYear*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetClassName
+  commentId: P:SchoolReportSystem.model.classes.Student.GetClassName
+  id: GetClassName
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetClassName
+  nameWithType: Student.GetClassName
+  fullName: SchoolReportSystem.model.classes.Student.GetClassName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetClassName
+    path: model/classes/Student.cs
+    startLine: 261
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the student&apos;s current class name.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetClassName;</code></pre>\nThis will return &quot;Grey&quot;."
+  syntax:
+    content: public string GetClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetClassName.
+    content.vb: Public ReadOnly Property GetClassName As String
+  overload: SchoolReportSystem.model.classes.Student.GetClassName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetSubject(System.Int32)
+  commentId: M:SchoolReportSystem.model.classes.Student.GetSubject(System.Int32)
+  id: GetSubject(System.Int32)
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetSubject(Int32)
+  nameWithType: Student.GetSubject(Int32)
+  fullName: SchoolReportSystem.model.classes.Student.GetSubject(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetSubject
+    path: model/classes/Student.cs
+    startLine: 278
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the Subject object located at a given index.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;2000&quot;, &quot;Dean&quot;, &quot;Ambrose&quot;, 8, &quot;Crimson&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;SOC4&quot;, &quot;Sociology&quot;, &quot;A&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;GMN4&quot;, &quot;German&quot;, &quot;B&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;MAT4&quot;, &quot;Maths&quot;, &quot;A&quot;, &quot;A*&quot;));\nsd.GetSubject(0);</code></pre>\nThe subject at index position 0 (Sociology) will be returned."
+  syntax:
+    content: public Subject GetSubject(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index position of the desired Subject object.
+    return:
+      type: SchoolReportSystem.model.classes.Subject
+      description: Returns the subject located at the index position specifed by the &apos;index&apos; parameter.
+    content.vb: Public Function GetSubject(index As Integer) As Subject
+  overload: SchoolReportSystem.model.classes.Student.GetSubject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.GetSubjects
+  commentId: P:SchoolReportSystem.model.classes.Student.GetSubjects
+  id: GetSubjects
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetSubjects
+  nameWithType: Student.GetSubjects
+  fullName: SchoolReportSystem.model.classes.Student.GetSubjects
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetSubjects
+    path: model/classes/Student.cs
+    startLine: 311
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves all subjects that the student studies.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;5451&quot;, &quot;Dylan&quot;, &quot;Thomas&quot;, 10, &quot;Sapphire&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;FRE3&quot;, &quot;French&quot;, &quot;A&quot;, &quot;A&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;BIO3&quot;, &quot;Biology&quot;, &quot;C&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;PSY3&quot;, &quot;Psychology&quot;, &quot;B&quot;, &quot;B&quot;));\nsd.GetSubjects;</code></pre>\nThis will return &apos;{(&quot;FRE3&quot;, &quot;French&quot;, &quot;A&quot;, &quot;A&quot;), (&quot;BIO3&quot;, &quot;Biology&quot;, &quot;C&quot;, &quot;B&quot;), (&quot;PSY3&quot;, &quot;Psychology&quot;, &quot;B&quot;, &quot;B&quot;)}&apos;.\n"
+  syntax:
+    content: public List<Subject> GetSubjects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+      description: Returns the value of GetSubjects.
+    content.vb: Public ReadOnly Property GetSubjects As List(Of Subject)
+  overload: SchoolReportSystem.model.classes.Student.GetSubjects*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetFilePath
+  commentId: P:SchoolReportSystem.model.classes.Student.GetFilePath
+  id: GetFilePath
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetFilePath
+  nameWithType: Student.GetFilePath
+  fullName: SchoolReportSystem.model.classes.Student.GetFilePath
+  type: Property
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetFilePath
+    path: model/classes/Student.cs
+    startLine: 323
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the unique filepath to be used to store the student&apos;s report.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;0007&quot;, &quot;John&quot;, &quot;Smith&quot;, 9, &quot;Grey&quot;);\nsd.GetFilePath;</code></pre>\nThis will return &quot;C:/Users/Yash/Desktop/Student Results/Year 9/John Smith.txt&quot;."
+  syntax:
+    content: public string GetFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: Returns the value of GetFilePath.
+    content.vb: Public ReadOnly Property GetFilePath As String
+  overload: SchoolReportSystem.model.classes.Student.GetFilePath*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SchoolReportSystem.model.classes.Student.GetTargetCount(System.String)
+  commentId: M:SchoolReportSystem.model.classes.Student.GetTargetCount(System.String)
+  id: GetTargetCount(System.String)
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: GetTargetCount(String)
+  nameWithType: Student.GetTargetCount(String)
+  fullName: SchoolReportSystem.model.classes.Student.GetTargetCount(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: GetTargetCount
+    path: model/classes/Student.cs
+    startLine: 354
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method retrieves the total number of subjects that the Student exceeds, meets or falls belows their expected grades.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;3650&quot;, &quot;Oliver&quot;, &quot;Ricardo&quot;, 9, &quot;Copper&quot;);\nsd.AddSubjectToStudent(new Subject(&quot;MAT3&quot;, &quot;Mathematics&quot;, &quot;A*&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;BIO3&quot;, &quot;Biology&quot;, &quot;B&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;CHM3&quot;, &quot;Chemistry&quot;, &quot;A&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;PHY3&quot;, &quot;Physics&quot;, &quot;C&quot;, &quot;B&quot;));\nsd.AddSubjectToStudent(new Subject(&quot;ENG3&quot;, &quot;English&quot;, &quot;B&quot;, &quot;A&quot;));</code></pre>\n"
+  - "\n<pre><code>sd.GetTargetCount(&quot;above&quot;);</code></pre>\nThis will return &apos;2&apos;."
+  - "\n<pre><code>sd.GetTargetCount(&quot;equal&quot;);</code></pre>\nThis will return &apos;1&apos;."
+  - "\n<pre><code>sd.GetTargetCount(&quot;below&quot;);</code></pre>\nThis will return &apos;2&apos;."
+  syntax:
+    content: public int GetTargetCount(string type)
+    parameters:
+    - id: type
+      type: System.String
+      description: ''
+    return:
+      type: System.Int32
+      description: The total number of subjects that satisfy the &apos;type&apos; string parameter are returned.
+    content.vb: Public Function GetTargetCount(type As String) As Integer
+  overload: SchoolReportSystem.model.classes.Student.GetTargetCount*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.CompareTo(SchoolReportSystem.model.classes.Student)
+  commentId: M:SchoolReportSystem.model.classes.Student.CompareTo(SchoolReportSystem.model.classes.Student)
+  id: CompareTo(SchoolReportSystem.model.classes.Student)
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Student)
+  nameWithType: Student.CompareTo(Student)
+  fullName: SchoolReportSystem.model.classes.Student.CompareTo(SchoolReportSystem.model.classes.Student)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: CompareTo
+    path: model/classes/Student.cs
+    startLine: 393
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method compares one Student object with another Student object.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;2000&quot;, &quot;Dean&quot;, &quot;Ambrose&quot;, 8, &quot;Crimson&quot;);\nStudent sd2 = new Student(&quot;2000&quot;, &quot;Dean&quot;, &quot;Ambrose&quot;, 8, &quot;Crimson&quot;);\nsd.CompareTo(sd2);</code></pre>\nThis returns <code>0</code>, as the objects have the exact same student ID."
+  syntax:
+    content: public int CompareTo(Student other)
+    parameters:
+    - id: other
+      type: SchoolReportSystem.model.classes.Student
+      description: A different Student object.
+    return:
+      type: System.Int32
+      description: Returns 0 if the objects are the same and -1 or 1 if they are different.
+    content.vb: Public Function CompareTo(other As Student) As Integer
+  overload: SchoolReportSystem.model.classes.Student.CompareTo*
+  implements:
+  - System.IComparable{SchoolReportSystem.model.classes.Student}.CompareTo(SchoolReportSystem.model.classes.Student)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SchoolReportSystem.model.classes.Student.ToString
+  commentId: M:SchoolReportSystem.model.classes.Student.ToString
+  id: ToString
+  parent: SchoolReportSystem.model.classes.Student
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Student.ToString()
+  fullName: SchoolReportSystem.model.classes.Student.ToString()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/model/classes/Student.cs
+    id: ToString
+    path: model/classes/Student.cs
+    startLine: 414
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.model.classes
+  summary: This method overrides the default &apos;ToString()&apos; representation of the Student class.
+  example:
+  - "\n<pre><code>Student sd = new Student(&quot;7142&quot;, &quot;Ralph&quot;, &quot;Dibney&quot;, 11, &quot;Silver&quot;);\nsd.ToString();</code></pre>"
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string representation of the Student object.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SchoolReportSystem.model.classes.Student.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IComparable{SchoolReportSystem.model.classes.Student}
+  commentId: T:System.IComparable{SchoolReportSystem.model.classes.Student}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<Student>
+  nameWithType: IComparable<Student>
+  fullName: System.IComparable<SchoolReportSystem.model.classes.Student>
+  nameWithType.vb: IComparable(Of Student)
+  fullName.vb: System.IComparable(Of SchoolReportSystem.model.classes.Student)
+  name.vb: IComparable(Of Student)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.Student.#ctor*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.#ctor
+  name: Student
+  nameWithType: Student.Student
+  fullName: SchoolReportSystem.model.classes.Student.Student
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SchoolReportSystem.model.classes.Student.AddSubjectToStudent*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.AddSubjectToStudent
+  name: AddSubjectToStudent
+  nameWithType: Student.AddSubjectToStudent
+  fullName: SchoolReportSystem.model.classes.Student.AddSubjectToStudent
+- uid: SchoolReportSystem.model.classes.Subject
+  commentId: T:SchoolReportSystem.model.classes.Subject
+  parent: SchoolReportSystem.model.classes
+  name: Subject
+  nameWithType: Subject
+  fullName: SchoolReportSystem.model.classes.Subject
+- uid: SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects
+  name: RemoveDuplicateSubjects
+  nameWithType: Student.RemoveDuplicateSubjects
+  fullName: SchoolReportSystem.model.classes.Student.RemoveDuplicateSubjects
+- uid: SchoolReportSystem.model.classes.Student.RemoveSubject*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.RemoveSubject
+  name: RemoveSubject
+  nameWithType: Student.RemoveSubject
+  fullName: SchoolReportSystem.model.classes.Student.RemoveSubject
+- uid: SchoolReportSystem.model.classes.Student.GetStudentID*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetStudentID
+  name: GetStudentID
+  nameWithType: Student.GetStudentID
+  fullName: SchoolReportSystem.model.classes.Student.GetStudentID
+- uid: SchoolReportSystem.model.classes.Student.GetForename*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetForename
+  name: GetForename
+  nameWithType: Student.GetForename
+  fullName: SchoolReportSystem.model.classes.Student.GetForename
+- uid: SchoolReportSystem.model.classes.Student.GetSurname*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetSurname
+  name: GetSurname
+  nameWithType: Student.GetSurname
+  fullName: SchoolReportSystem.model.classes.Student.GetSurname
+- uid: SchoolReportSystem.model.classes.Student.GetFullName*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetFullName
+  name: GetFullName
+  nameWithType: Student.GetFullName
+  fullName: SchoolReportSystem.model.classes.Student.GetFullName
+- uid: SchoolReportSystem.model.classes.Student.GetYear*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetYear
+  name: GetYear
+  nameWithType: Student.GetYear
+  fullName: SchoolReportSystem.model.classes.Student.GetYear
+- uid: SchoolReportSystem.model.classes.Student.GetClassName*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetClassName
+  name: GetClassName
+  nameWithType: Student.GetClassName
+  fullName: SchoolReportSystem.model.classes.Student.GetClassName
+- uid: SchoolReportSystem.model.classes.Student.GetSubject*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetSubject
+  name: GetSubject
+  nameWithType: Student.GetSubject
+  fullName: SchoolReportSystem.model.classes.Student.GetSubject
+- uid: SchoolReportSystem.model.classes.Student.GetSubjects*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetSubjects
+  name: GetSubjects
+  nameWithType: Student.GetSubjects
+  fullName: SchoolReportSystem.model.classes.Student.GetSubjects
+- uid: System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+  commentId: T:System.Collections.Generic.List{SchoolReportSystem.model.classes.Subject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Subject>
+  nameWithType: List<Subject>
+  fullName: System.Collections.Generic.List<SchoolReportSystem.model.classes.Subject>
+  nameWithType.vb: List(Of Subject)
+  fullName.vb: System.Collections.Generic.List(Of SchoolReportSystem.model.classes.Subject)
+  name.vb: List(Of Subject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SchoolReportSystem.model.classes.Subject
+    name: Subject
+    nameWithType: Subject
+    fullName: SchoolReportSystem.model.classes.Subject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SchoolReportSystem.model.classes.Subject
+    name: Subject
+    nameWithType: Subject
+    fullName: SchoolReportSystem.model.classes.Subject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SchoolReportSystem.model.classes.Student.GetFilePath*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetFilePath
+  name: GetFilePath
+  nameWithType: Student.GetFilePath
+  fullName: SchoolReportSystem.model.classes.Student.GetFilePath
+- uid: SchoolReportSystem.model.classes.Student.GetTargetCount*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.GetTargetCount
+  name: GetTargetCount
+  nameWithType: Student.GetTargetCount
+  fullName: SchoolReportSystem.model.classes.Student.GetTargetCount
+- uid: SchoolReportSystem.model.classes.Student.CompareTo*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.CompareTo
+  name: CompareTo
+  nameWithType: Student.CompareTo
+  fullName: SchoolReportSystem.model.classes.Student.CompareTo
+- uid: System.IComparable{SchoolReportSystem.model.classes.Student}.CompareTo(SchoolReportSystem.model.classes.Student)
+  commentId: M:System.IComparable{SchoolReportSystem.model.classes.Student}.CompareTo(SchoolReportSystem.model.classes.Student)
+  parent: System.IComparable{SchoolReportSystem.model.classes.Student}
+  definition: System.IComparable`1.CompareTo(`0)
+  name: CompareTo(Student)
+  nameWithType: IComparable<Student>.CompareTo(Student)
+  fullName: System.IComparable<SchoolReportSystem.model.classes.Student>.CompareTo(SchoolReportSystem.model.classes.Student)
+  nameWithType.vb: IComparable(Of Student).CompareTo(Student)
+  fullName.vb: System.IComparable(Of SchoolReportSystem.model.classes.Student).CompareTo(SchoolReportSystem.model.classes.Student)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable<Student>.CompareTo
+    fullName: System.IComparable<SchoolReportSystem.model.classes.Student>.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable(Of Student).CompareTo
+    fullName: System.IComparable(Of SchoolReportSystem.model.classes.Student).CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SchoolReportSystem.model.classes.Student
+    name: Student
+    nameWithType: Student
+    fullName: SchoolReportSystem.model.classes.Student
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.Student
+  commentId: T:SchoolReportSystem.model.classes.Student
+  parent: SchoolReportSystem.model.classes
+  name: Student
+  nameWithType: Student
+  fullName: SchoolReportSystem.model.classes.Student
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable<T>.CompareTo
+    fullName: System.IComparable<T>.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    nameWithType: IComparable(Of T).CompareTo
+    fullName: System.IComparable(Of T).CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SchoolReportSystem.model.classes.Student.ToString*
+  commentId: Overload:SchoolReportSystem.model.classes.Student.ToString
+  name: ToString
+  nameWithType: Student.ToString
+  fullName: SchoolReportSystem.model.classes.Student.ToString

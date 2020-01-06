@@ -1,0 +1,738 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.utility.ImportMethods
+  commentId: T:SchoolReportSystem.utility.ImportMethods
+  id: ImportMethods
+  parent: SchoolReportSystem.utility
+  children:
+  - SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric(System.String)
+  - SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter(System.String,System.Boolean)
+  - SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear(System.Int32)
+  - SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent(System.Int32,System.String)
+  - SchoolReportSystem.utility.ImportMethods.ShortenSubjectName(System.String)
+  - SchoolReportSystem.utility.ImportMethods.StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear,System.String[])
+  - SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails(SchoolReportSystem.model.classes.Student,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: ImportMethods
+  nameWithType: ImportMethods
+  fullName: SchoolReportSystem.utility.ImportMethods
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: ImportMethods
+    path: utility/ImportMethods.cs
+    startLine: 13
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: >-
+    This class contains some useful utility methods to support the <code>ImportData</code> class.
+
+
+    <author>Author: Yashwant Rathor</author>
+  example: []
+  syntax:
+    content: public static class ImportMethods
+    content.vb: Public Module ImportMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear,System.String[])
+  commentId: M:SchoolReportSystem.utility.ImportMethods.StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear,System.String[])
+  id: StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear,System.String[])
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: StoreStudentDetails(AcademicYear, String[])
+  nameWithType: ImportMethods.StoreStudentDetails(AcademicYear, String[])
+  fullName: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: StoreStudentDetails
+    path: utility/ImportMethods.cs
+    startLine: 22
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method stores valid student data into a Student object, which is then stored within the AcademicYear object.
+  example: []
+  syntax:
+    content: public static void StoreStudentDetails(AcademicYear ay, string[] array)
+    parameters:
+    - id: ay
+      type: SchoolReportSystem.model.classes.AcademicYear
+      description: The AcademicYear object to have a student added to it.
+    - id: array
+      type: System.String[]
+      description: The array, representing items on a line of the raw data text file.
+    content.vb: Public Shared Sub StoreStudentDetails(ay As AcademicYear, array As String())
+  overload: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails*
+  nameWithType.vb: ImportMethods.StoreStudentDetails(AcademicYear, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails(SchoolReportSystem.model.classes.AcademicYear, System.String())
+  name.vb: StoreStudentDetails(AcademicYear, String())
+- uid: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails(SchoolReportSystem.model.classes.Student,System.String[])
+  commentId: M:SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails(SchoolReportSystem.model.classes.Student,System.String[])
+  id: StoreSubjectDetails(SchoolReportSystem.model.classes.Student,System.String[])
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: StoreSubjectDetails(Student, String[])
+  nameWithType: ImportMethods.StoreSubjectDetails(Student, String[])
+  fullName: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails(SchoolReportSystem.model.classes.Student, System.String[])
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: StoreSubjectDetails
+    path: utility/ImportMethods.cs
+    startLine: 43
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method stores valid subject data into a Subject object, which is then stored within the Student object.
+  example: []
+  syntax:
+    content: public static void StoreSubjectDetails(Student sd, string[] array)
+    parameters:
+    - id: sd
+      type: SchoolReportSystem.model.classes.Student
+      description: The Student object to have a subject added to it.
+    - id: array
+      type: System.String[]
+      description: The array, representing items on a line of the raw data text file.
+    content.vb: Public Shared Sub StoreSubjectDetails(sd As Student, array As String())
+  overload: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails*
+  nameWithType.vb: ImportMethods.StoreSubjectDetails(Student, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails(SchoolReportSystem.model.classes.Student, System.String())
+  name.vb: StoreSubjectDetails(Student, String())
+- uid: SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent(System.Int32,System.String)
+  commentId: M:SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent(System.Int32,System.String)
+  id: CheckSubjectIDForStudent(System.Int32,System.String)
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: CheckSubjectIDForStudent(Int32, String)
+  nameWithType: ImportMethods.CheckSubjectIDForStudent(Int32, String)
+  fullName: SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: CheckSubjectIDForStudent
+    path: utility/ImportMethods.cs
+    startLine: 70
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method checks whether the subject ID is applicable for a student, dependant of what year they are in.
+  example: []
+  syntax:
+    content: public static bool CheckSubjectIDForStudent(int year, string subjectID)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The student&apos;s current year.
+    - id: subjectID
+      type: System.String
+      description: The subject&apos;s ID.
+    return:
+      type: System.Boolean
+      description: A boolean true/false is returned, which depends on the subject ID value being applicable to the student&apos;s year or not.
+    content.vb: Public Shared Function CheckSubjectIDForStudent(year As Integer, subjectID As String) As Boolean
+  overload: SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear(System.Int32)
+  commentId: M:SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear(System.Int32)
+  id: CheckNoSubjectsForYear(System.Int32)
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: CheckNoSubjectsForYear(Int32)
+  nameWithType: ImportMethods.CheckNoSubjectsForYear(Int32)
+  fullName: SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: CheckNoSubjectsForYear
+    path: utility/ImportMethods.cs
+    startLine: 99
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This useful method returns the correct number of subjects for an academic year.
+  example: []
+  syntax:
+    content: public static int CheckNoSubjectsForYear(int year)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The school year.
+    return:
+      type: System.Int32
+      description: The total number of subjects for that year.
+    content.vb: Public Shared Function CheckNoSubjectsForYear(year As Integer) As Integer
+  overload: SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter(System.String,System.Boolean)
+  commentId: M:SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter(System.String,System.Boolean)
+  id: CapitaliseFirstLetter(System.String,System.Boolean)
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: CapitaliseFirstLetter(String, Boolean)
+  nameWithType: ImportMethods.CapitaliseFirstLetter(String, Boolean)
+  fullName: SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: CapitaliseFirstLetter
+    path: utility/ImportMethods.cs
+    startLine: 137
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns a single word string into capital case by capitalising the first letter of the word.
+  example: []
+  syntax:
+    content: public static string CapitaliseFirstLetter(string s, bool special)
+    parameters:
+    - id: s
+      type: System.String
+      description: The string to have the first letter capitalised.
+    - id: special
+      type: System.Boolean
+      description: A true/false value dependant on whether there are special characters in the string or not.
+    return:
+      type: System.String
+      description: The string has the first letter capitalised and any leading/trailing whitespaces are removed.
+    content.vb: Public Shared Function CapitaliseFirstLetter(s As String, special As Boolean) As String
+  overload: SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric(System.String)
+  commentId: M:SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric(System.String)
+  id: CapitaliseAlphaNumeric(System.String)
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: CapitaliseAlphaNumeric(String)
+  nameWithType: ImportMethods.CapitaliseAlphaNumeric(String)
+  fullName: SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: CapitaliseAlphaNumeric
+    path: utility/ImportMethods.cs
+    startLine: 173
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns a single &apos;alphanumeric&apos; string into capital case by capitalising each letter.
+  example: []
+  syntax:
+    content: public static string CapitaliseAlphaNumeric(string s)
+    parameters:
+    - id: s
+      type: System.String
+      description: The alphanumeric string to have each letter capitalised.
+    return:
+      type: System.String
+      description: The alphanumeric string has each letter capitalised and any leading/trailing whitespaces are removed.
+    content.vb: Public Shared Function CapitaliseAlphaNumeric(s As String) As String
+  overload: SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SchoolReportSystem.utility.ImportMethods.ShortenSubjectName(System.String)
+  commentId: M:SchoolReportSystem.utility.ImportMethods.ShortenSubjectName(System.String)
+  id: ShortenSubjectName(System.String)
+  parent: SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: ShortenSubjectName(String)
+  nameWithType: ImportMethods.ShortenSubjectName(String)
+  fullName: SchoolReportSystem.utility.ImportMethods.ShortenSubjectName(System.String)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Yash/source/repos/SchoolReportSystem/utility/ImportMethods.cs
+    id: ShortenSubjectName
+    path: utility/ImportMethods.cs
+    startLine: 208
+  assemblies:
+  - SchoolReportSystem
+  namespace: SchoolReportSystem.utility
+  summary: This method returns a shortened variant of the string representing the subject name.
+  example: []
+  syntax:
+    content: public static string ShortenSubjectName(string subjectName)
+    parameters:
+    - id: subjectName
+      type: System.String
+      description: The subject name to be shortened.
+    return:
+      type: System.String
+      description: The subject name is abbreviated, depending on certain conditions.
+    content.vb: Public Shared Function ShortenSubjectName(subjectName As String) As String
+  overload: SchoolReportSystem.utility.ImportMethods.ShortenSubjectName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SchoolReportSystem.utility
+  commentId: N:SchoolReportSystem.utility
+  name: SchoolReportSystem.utility
+  nameWithType: SchoolReportSystem.utility
+  fullName: SchoolReportSystem.utility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.StoreStudentDetails
+  name: StoreStudentDetails
+  nameWithType: ImportMethods.StoreStudentDetails
+  fullName: SchoolReportSystem.utility.ImportMethods.StoreStudentDetails
+- uid: SchoolReportSystem.model.classes.AcademicYear
+  commentId: T:SchoolReportSystem.model.classes.AcademicYear
+  parent: SchoolReportSystem.model.classes
+  name: AcademicYear
+  nameWithType: AcademicYear
+  fullName: SchoolReportSystem.model.classes.AcademicYear
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: SchoolReportSystem.model.classes
+  commentId: N:SchoolReportSystem.model.classes
+  name: SchoolReportSystem.model.classes
+  nameWithType: SchoolReportSystem.model.classes
+  fullName: SchoolReportSystem.model.classes
+- uid: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails
+  name: StoreSubjectDetails
+  nameWithType: ImportMethods.StoreSubjectDetails
+  fullName: SchoolReportSystem.utility.ImportMethods.StoreSubjectDetails
+- uid: SchoolReportSystem.model.classes.Student
+  commentId: T:SchoolReportSystem.model.classes.Student
+  parent: SchoolReportSystem.model.classes
+  name: Student
+  nameWithType: Student
+  fullName: SchoolReportSystem.model.classes.Student
+- uid: SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent
+  name: CheckSubjectIDForStudent
+  nameWithType: ImportMethods.CheckSubjectIDForStudent
+  fullName: SchoolReportSystem.utility.ImportMethods.CheckSubjectIDForStudent
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear
+  name: CheckNoSubjectsForYear
+  nameWithType: ImportMethods.CheckNoSubjectsForYear
+  fullName: SchoolReportSystem.utility.ImportMethods.CheckNoSubjectsForYear
+- uid: SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter
+  name: CapitaliseFirstLetter
+  nameWithType: ImportMethods.CapitaliseFirstLetter
+  fullName: SchoolReportSystem.utility.ImportMethods.CapitaliseFirstLetter
+- uid: SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric
+  name: CapitaliseAlphaNumeric
+  nameWithType: ImportMethods.CapitaliseAlphaNumeric
+  fullName: SchoolReportSystem.utility.ImportMethods.CapitaliseAlphaNumeric
+- uid: SchoolReportSystem.utility.ImportMethods.ShortenSubjectName*
+  commentId: Overload:SchoolReportSystem.utility.ImportMethods.ShortenSubjectName
+  name: ShortenSubjectName
+  nameWithType: ImportMethods.ShortenSubjectName
+  fullName: SchoolReportSystem.utility.ImportMethods.ShortenSubjectName

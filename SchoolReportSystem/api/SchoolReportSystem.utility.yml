@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.utility
+  commentId: N:SchoolReportSystem.utility
+  id: SchoolReportSystem.utility
+  children:
+  - SchoolReportSystem.utility.ExportMethods
+  - SchoolReportSystem.utility.HelperMethods
+  - SchoolReportSystem.utility.ImportMethods
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.utility
+  nameWithType: SchoolReportSystem.utility
+  fullName: SchoolReportSystem.utility
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.utility.ExportMethods
+  commentId: T:SchoolReportSystem.utility.ExportMethods
+  name: ExportMethods
+  nameWithType: ExportMethods
+  fullName: SchoolReportSystem.utility.ExportMethods
+- uid: SchoolReportSystem.utility.HelperMethods
+  commentId: T:SchoolReportSystem.utility.HelperMethods
+  name: HelperMethods
+  nameWithType: HelperMethods
+  fullName: SchoolReportSystem.utility.HelperMethods
+- uid: SchoolReportSystem.utility.ImportMethods
+  commentId: T:SchoolReportSystem.utility.ImportMethods
+  name: ImportMethods
+  nameWithType: ImportMethods
+  fullName: SchoolReportSystem.utility.ImportMethods

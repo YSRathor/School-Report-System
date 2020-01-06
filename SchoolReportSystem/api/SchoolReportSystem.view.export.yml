@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.view.export
+  commentId: N:SchoolReportSystem.view.export
+  id: SchoolReportSystem.view.export
+  children:
+  - SchoolReportSystem.view.export.ExportData
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.view.export
+  nameWithType: SchoolReportSystem.view.export
+  fullName: SchoolReportSystem.view.export
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.view.export.ExportData
+  commentId: T:SchoolReportSystem.view.export.ExportData
+  parent: SchoolReportSystem.view.export
+  name: ExportData
+  nameWithType: ExportData
+  fullName: SchoolReportSystem.view.export.ExportData
+- uid: SchoolReportSystem.view.export
+  commentId: N:SchoolReportSystem.view.export
+  name: SchoolReportSystem.view.export
+  nameWithType: SchoolReportSystem.view.export
+  fullName: SchoolReportSystem.view.export

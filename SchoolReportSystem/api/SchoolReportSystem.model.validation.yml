@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.model.validation
+  commentId: N:SchoolReportSystem.model.validation
+  id: SchoolReportSystem.model.validation
+  children:
+  - SchoolReportSystem.model.validation.SchoolValidation
+  - SchoolReportSystem.model.validation.StudentValidation
+  - SchoolReportSystem.model.validation.SubjectValidation
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.model.validation
+  nameWithType: SchoolReportSystem.model.validation
+  fullName: SchoolReportSystem.model.validation
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.model.validation.SchoolValidation
+  commentId: T:SchoolReportSystem.model.validation.SchoolValidation
+  name: SchoolValidation
+  nameWithType: SchoolValidation
+  fullName: SchoolReportSystem.model.validation.SchoolValidation
+- uid: SchoolReportSystem.model.validation.StudentValidation
+  commentId: T:SchoolReportSystem.model.validation.StudentValidation
+  name: StudentValidation
+  nameWithType: StudentValidation
+  fullName: SchoolReportSystem.model.validation.StudentValidation
+- uid: SchoolReportSystem.model.validation.SubjectValidation
+  commentId: T:SchoolReportSystem.model.validation.SubjectValidation
+  name: SubjectValidation
+  nameWithType: SubjectValidation
+  fullName: SchoolReportSystem.model.validation.SubjectValidation

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.main
+  commentId: N:SchoolReportSystem.main
+  id: SchoolReportSystem.main
+  children:
+  - SchoolReportSystem.main.SchoolReportApplication
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.main
+  nameWithType: SchoolReportSystem.main
+  fullName: SchoolReportSystem.main
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.main.SchoolReportApplication
+  commentId: T:SchoolReportSystem.main.SchoolReportApplication
+  name: SchoolReportApplication
+  nameWithType: SchoolReportApplication
+  fullName: SchoolReportSystem.main.SchoolReportApplication

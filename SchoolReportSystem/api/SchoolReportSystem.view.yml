@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SchoolReportSystem.view
+  commentId: N:SchoolReportSystem.view
+  id: SchoolReportSystem.view
+  children:
+  - SchoolReportSystem.view.DataClass
+  langs:
+  - csharp
+  - vb
+  name: SchoolReportSystem.view
+  nameWithType: SchoolReportSystem.view
+  fullName: SchoolReportSystem.view
+  type: Namespace
+  assemblies:
+  - SchoolReportSystem
+references:
+- uid: SchoolReportSystem.view.DataClass
+  commentId: T:SchoolReportSystem.view.DataClass
+  name: DataClass
+  nameWithType: DataClass
+  fullName: SchoolReportSystem.view.DataClass
