@@ -133,7 +133,7 @@ namespace SchoolReportSystemTests.model.classes
         [TestMethod()]
         public void GetFilePathTest()
         {
-            Assert.AreEqual("C:/Users/Yash/Desktop/Student Results/Year 7/Jack Kallis.txt", student.GetFilePath);
+            Assert.AreEqual("C:/Users/Student Results/Year 7/Jack Kallis.txt", student.GetFilePath);
         }
 
         [TestMethod()]
