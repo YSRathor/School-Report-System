@@ -317,7 +317,7 @@ namespace SchoolReportSystem.model.classes
          * <example>
          * <code>Student sd = new Student("0007", "John", "Smith", 9, "Grey");
          * sd.GetFilePath;</code>
-         * This will return "C:/Users/Student Results/Year 9/John Smith.txt".</example>
+         * This will return "C:/Student Results/Year 9/John Smith.txt".</example>
          * 
          * <returns>Returns the value of GetFilePath.</returns>
          */
