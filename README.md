@@ -1,5 +1,5 @@
 # School-Report-System
-An independent project that was built to generate grade reports for students.
+An independant project that was built to generate grade reports for students.
 
 <h2>Instructions for use:</h2>
 <p>1. Download Source Code.</p>
